@@ -58,6 +58,7 @@
       &::after {
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
+        width: 30px;
       }
     }
   }

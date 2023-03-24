@@ -1,23 +1,9 @@
 .header {
-  // .header__inner
-  &__inner {
-  }
-
-  // .header__nav
-  &__nav {
-    @include flex();
-  }
-}
-
-.header {
   position: fixed;
   width: 100%;
   z-index: 999;
   padding: 50px 0;
 
-  @include media(max, xl) {
-    padding: 20px 0;
-  }
   // .header__wrapper
   &__wrapper {
     background: rgba(255, 255, 255, 0.01);
@@ -25,12 +11,14 @@
     backdrop-filter: blur(7.5px);
 
     border-radius: 76px;
+    padding: 15px 30px;
 
-    @include flex(space-between, center);
+    @include flex($align-items: center);
   }
   // .header__block
   &__block {
     @include flex(space-between, center);
+    gap: 45px;
   }
   // .header__span
   &__span {
@@ -80,6 +68,7 @@
   }
   // .header__logo
   &__logo {
+    margin: 0 145px 0 80px;
   }
   // .header__inner
   &__inner {
@@ -88,14 +77,25 @@
   }
   // .header__box
   &__box {
-    @include flex(space-between, center, $flex-direction: column);
-    &--time::before {
-      @include pseudo;
-      position: absolute;
-      top: 0;
-      left: -30px;
-      background-image: url(../img/icons/time.svg);
-      @include wh(23px);
+    @include flex(space-between, $flex-direction: column);
+    &-buttons {
+      flex-direction: row;
+      gap: 8px;
+      margin-left: 16px;
+    }
+    &--time {
+      margin-right: 85px;
+      &::before {
+        @include pseudo;
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+        left: -30px;
+        background-image: url(../img/icons/time.svg);
+        @include wh(23px);
+      }
     }
   }
   // .header__box--time
@@ -114,95 +114,25 @@
   &__nav {
     display: none;
   }
+
   // .header__link
   &__link {
-	
-max-width: 195px;
-width: 100%;
-height: 73px;
+    @include flex(center, center);
 
+    max-width: 195px;
+    width: 100%;
+    height: 73px;
 
-background-color: #FFFFFF;
-border-radius: 63px;
+    background-color: #ffffff;
+    border-radius: 63px;
 
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
 
-
-font-family: "ProximaNova-Light";
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-
-color: $textAccentColor;
-
-
-
-  }
-}
-.header {
-  // .header__wrapper
-  &__wrapper {
-  }
-  // .header__block
-  &__block {
-  }
-  // .header__span
-  &__span {
-  }
-  // .header__span--thin
-  &__span--thin {
-  }
-  // .header__burger
-  &__burger {
-  }
-  // .header__logo
-  &__logo {
-  }
-  // .header__inner
-  &__inner {
-  }
-  // .header__box
-  &__box {
-  }
-  // .header__box--time
-  &__box--time {
-  }
-  // .header__span--tel
-  &__span--tel {
-  }
-  // .header__span--viber
-  &__span--viber {
-  }
-  // .header__span--map
-  &__span--map {
-  }
-  // .header__nav
-  &__nav {
-  }
-  // .header__link
-  &__link {
-  }
-}
-.container {
-}
-.burger {
-  // .burger__inner
-  &__inner {
-  }
-}
-.logo {
-  // .logo__img
-  &__img {
-  }
-}
-.nav {
-  // .nav__link
-  &__link {
-  }
-  // .nav__list
-  &__list {
-  }
-  // .nav__item
-  &__item {
+    color: $textAccentColor;
   }
 }

@@ -1,136 +1,16 @@
 .nav {
+  // .nav__list
+  &__list {
+    @include flex($flex-direction: column);
+    gap: 50px;
+  }
 
-	// .nav__list
-	&__list {
-		@include flex ($flex-direction: column);
-		gap: 50px;
-		padding-left: 30px;
+  // .nav__item
+  &__item {
+    font-size: 20px;
+  }
 
-		@include media (min, xl) {
-			gap: 106px;
-			flex-direction: row;
-		}
-	}
-
-	// .nav__item
-	&__item {
-		font-size: 14px;
-	}
-
-	// .nav__link
-	&__link {}
-
-	// .nav__item--map
-	&__item--map::before {
-		background-image: url(../img/icons/location.svg);
-		width: 14px;
-		height: 18px;
-
-	}
-
-	// .nav__item--work
-	&__item--work::before {
-
-		background-image: url(../img/icons/watch.svg);
-		width: 16px;
-		height: 16px;
-
-	}
-
-	// .nav__item--mail
-	&__item--mail::before {
-		background-image: url(../img/icons/letter.svg);
-		width: 19px;
-		height: 14px;
-
-	}
-
-	// .nav__item--tel
-	&__item--tel::before {
-		background-image: url(../img/icons/phone.svg);
-		width: 16px;
-		height: 16px;
-
-	}
-
-	// .nav__item--services
-	&__item--services::before {
-		background-image: url(../img/icons/burger.svg);
-		width: 20px;
-		height: 14px;
-
-	}
-
-	&__item--work,
-	&__item--mail,
-	&__item--tel,
-	&__item--services,
-	&__item--map {
-		position: relative;
-	}
-
-	&__item--work::before,
-	&__item--mail::before,
-	&__item--tel::before,
-	&__item--services::before,
-	&__item--map::before {
-		@include pseudo;
-		position: absolute;
-		top: 0;
-		left: -30px;
-
-	}
-
-
-	// .nav__tel
-	&__tel {
-		@include media (min, lg) {
-
-
-			font-family: 'OnestMedium';
-			font-style: normal;
-			font-size: 16px;
-			line-height: 20px;
-			text-align: right;
-
-			color: #0F2F2E;
-
-
-		}
-	}
-}
-
-.nav--top {
-	color: #707777;
-	border-bottom: 1px solid rgba(15, 47, 46, 0.08);
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-
-
-
-}
-
-.nav--bottom {
-	justify-content: space-between;
-
-	.nav__link {
-		font-size: 16px;
-	}
-
-	.nav__list {
-		gap: 85px;
-
-		@include media (min, xl) {
-			// gap: 106px;
-		}
-	}
-}
-
-.nav {
-	// .nav__link
-	&__link {}
-	// .nav__list
-	&__list {}
-	// .nav__item
-	&__item {}
+  // .nav__link
+  &__link {
+  }
 }
