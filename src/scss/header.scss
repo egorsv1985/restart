@@ -1,18 +1,6 @@
 .header {
- 
-
-
-
-
-
   // .header__inner
   &__inner {
-   
-
-    @include media(min, xl) {
-      @include flex($flex-direction: column);
-      width: 1016px;
-    }
   }
 
   // .header__nav
@@ -21,37 +9,142 @@
   }
 }
 
-
-
 .header {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	padding: 50px 0;
-	
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 50px 0;
 
-
-
-
-	
-	@include media(max, xl) {
-		padding: 20px 0;
-	  }
+  @include media(max, xl) {
+    padding: 20px 0;
+  }
   // .header__wrapper
   &__wrapper {
-	background: rgba(255, 255, 255, 0.01);
-border: 1px solid #FFFFFF;
-backdrop-filter: blur(7.5px);
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(7.5px);
 
-border-radius: 76px;
+    border-radius: 76px;
 
-@include flex(space-between, center);
-
+    @include flex(space-between, center);
   }
   // .header__block
   &__block {
-	width: 100%;
     @include flex(space-between, center);
+  }
+  // .header__span
+  &__span {
+    font-family: "ProximaNova-Regular";
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    position: relative;
+    &--thin {
+      font-family: "ProximaNova-Light";
+      font-weight: 300;
+      line-height: 20px;
+    }
+    &--tel::before {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      background-image: url(../img/icons/tel.svg);
+      width: 14px;
+      height: 15px;
+    }
+    &--map::before {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      background-image: url(../img/icons/map.svg);
+      @include wh(23px);
+    }
+    &--viber::before {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      background-image: url(../img/icons/viber.svg);
+      @include wh(18px);
+    }
+  }
+
+  // .header__span--thin
+  &__span--thin {
+  }
+  // .header__burger
+  &__burger {
+    transition: transform 0.4s;
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__inner
+  &__inner {
+    position: relative;
+    @include flex(space-between, center);
+  }
+  // .header__box
+  &__box {
+    @include flex(space-between, center, $flex-direction: column);
+    &--time::before {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      left: -30px;
+      background-image: url(../img/icons/time.svg);
+      @include wh(23px);
+    }
+  }
+  // .header__box--time
+  &__box--time::before {
+  }
+  // .header__span--tel
+  &__span--tel {
+  }
+  // .header__span--viber
+  &__span--viber {
+  }
+  // .header__span--map
+  &__span--map {
+  }
+  // .header__nav
+  &__nav {
+    display: none;
+  }
+  // .header__link
+  &__link {
+	
+max-width: 195px;
+width: 100%;
+height: 73px;
+
+
+background-color: #FFFFFF;
+border-radius: 63px;
+
+
+
+font-family: "ProximaNova-Light";
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+
+color: $textAccentColor;
+
+
+
+  }
+}
+.header {
+  // .header__wrapper
+  &__wrapper {
+  }
+  // .header__block
+  &__block {
   }
   // .header__span
   &__span {
@@ -61,7 +154,6 @@ border-radius: 76px;
   }
   // .header__burger
   &__burger {
-	transition: transform 0.4s;
   }
   // .header__logo
   &__logo {
@@ -71,6 +163,9 @@ border-radius: 76px;
   }
   // .header__box
   &__box {
+  }
+  // .header__box--time
+  &__box--time {
   }
   // .header__span--tel
   &__span--tel {
@@ -86,5 +181,28 @@ border-radius: 76px;
   }
   // .header__link
   &__link {
+  }
+}
+.container {
+}
+.burger {
+  // .burger__inner
+  &__inner {
+  }
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+}
+.nav {
+  // .nav__link
+  &__link {
+  }
+  // .nav__list
+  &__list {
+  }
+  // .nav__item
+  &__item {
   }
 }
