@@ -1,0 +1,82 @@
+.btn {
+	@include flex (center, center);
+	width: 240px;
+	height: 40px;
+
+
+	border-radius: 50px;
+	font-family: 'OnestMedium';
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+
+	border: none;
+
+	@include media (min, lg) {
+
+		width: 231px;
+		height: 60px;
+
+		font-size: 16px;
+		line-height: 20px;
+
+
+	}
+}
+
+.btn-primary {
+
+	background-color: #53CD8B;
+
+
+	color: #FFFFFF;
+
+
+	&:hover {
+		border: 2px solid #53CD8B;
+		color: #53CD8B;
+		background-color: transparent;
+	}
+
+}
+
+.btn-secondary {
+
+	border: 2px solid #53CD8B;
+	color: #53CD8B;
+	background-color: transparent;
+
+	&:hover {
+
+		background-color: #53CD8B;
+
+
+		color: #FFFFFF;
+
+	}
+}
+
+.consultations__btn-primary {
+	border: 2px solid #0F2F2E;
+	color: #0F2F2E;
+	background-color: transparent;
+
+	&:hover {
+		color: $accentColor;
+		background-color: #0F2F2E;
+		border: none;
+	}
+
+}
+
+.consultations__btn-secondary {
+	color: $accentColor;
+	background-color: #0F2F2E;
+	border: none;
+
+	&:hover {
+		border: 2px solid #0F2F2E;
+		color: #0F2F2E;
+	}
+}

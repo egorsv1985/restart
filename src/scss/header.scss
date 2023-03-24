@@ -1,0 +1,90 @@
+.header {
+ 
+
+
+
+
+
+  // .header__inner
+  &__inner {
+   
+
+    @include media(min, xl) {
+      @include flex($flex-direction: column);
+      width: 1016px;
+    }
+  }
+
+  // .header__nav
+  &__nav {
+    @include flex();
+  }
+}
+
+
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 50px 0;
+	
+
+
+
+
+	
+	@include media(max, xl) {
+		padding: 20px 0;
+	  }
+  // .header__wrapper
+  &__wrapper {
+	background: rgba(255, 255, 255, 0.01);
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(7.5px);
+
+border-radius: 76px;
+
+@include flex(space-between, center);
+
+  }
+  // .header__block
+  &__block {
+	width: 100%;
+    @include flex(space-between, center);
+  }
+  // .header__span
+  &__span {
+  }
+  // .header__span--thin
+  &__span--thin {
+  }
+  // .header__burger
+  &__burger {
+	transition: transform 0.4s;
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__inner
+  &__inner {
+  }
+  // .header__box
+  &__box {
+  }
+  // .header__span--tel
+  &__span--tel {
+  }
+  // .header__span--viber
+  &__span--viber {
+  }
+  // .header__span--map
+  &__span--map {
+  }
+  // .header__nav
+  &__nav {
+  }
+  // .header__link
+  &__link {
+  }
+}

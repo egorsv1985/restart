@@ -1,0 +1,154 @@
+.popup {
+
+
+
+
+	// .popup__wrapper
+	&__wrapper {}
+
+	// .popup__content
+	&__content {
+
+
+		background-color: #0F2F2E;
+		border-radius: 40px;
+		color: #fff;
+
+
+	}
+
+	// .popup__close
+	&__close {
+		@include pos (absolute, $top: 25px, $right: 10px);
+		@include media (min, lg) {
+			right: 30px;
+		}
+		svg{
+			@include wh (30px);
+		@include media (min, lg) {
+			@include wh (45px);
+		}
+		}
+		
+	}
+
+	// .popup__wrap
+	&__wrap {}
+
+	// .popup__title
+	&__title {
+		@include media (min, lg) {
+			font-size: 28px;
+			line-height: 140%;
+		}
+
+		color: #FFFFFF;
+		margin-bottom: 20px;
+
+
+
+	}
+
+	// .popup__subtitle
+	&__subtitle {
+
+		font-size: 16px;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 475px;
+		margin: 0 auto 40px;
+	}
+
+
+
+
+	.forms {
+
+		// .forms__form
+		&__form {
+
+			
+		}
+	}
+
+	.form {
+		@include media (min, xl) {
+			flex-direction: column;
+
+		}
+
+		// .form__box
+		&__box {
+
+			gap: 20px;
+			margin-bottom: 20px;
+			@include media (min, xl) {
+				flex-direction: row;
+			}
+		}
+
+		// .form__wrap
+		&__wrap {}
+
+
+
+
+
+		// .form__input
+		&__input {
+			border-color: #fff;
+			width: 270px;
+
+			color: #FFFFFF;
+			padding-left: 50px;
+
+			&::placeholder {
+
+				font-size: 16px;
+				line-height: 20px;
+
+				color: #FFF;
+
+			}
+
+
+		}
+
+		// .form__inner
+		&__inner {
+
+			gap: 20px;
+			@include media (min, lg) {
+				flex-direction: column;
+			}
+			@include media (min, xl) {
+				flex-direction: row;
+			}
+		}
+
+		// .form__btn
+		&__btn {
+
+			width: 270px;
+
+
+			color: #FFFFFF;
+
+
+		}
+
+		// .form__text
+		&__text {
+			max-width: 270px;
+
+			font-size: 14px;
+			line-height: 150%;
+
+
+
+
+		}
+
+
+	}
+}
