@@ -13,7 +13,7 @@
 @import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "OnestRegular";
+$fontFamily: "micra";
 $fontSize: rem(20); // где 20(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -165,12 +165,11 @@ body {
 
 // sections
 
-@import "./sections/hero";
+@import "./sections/prime";
 @import "./sections/services";
 @import "./sections/about";
 @import "./sections/consultations";
 @import "./sections/reviews";
-@import "./sections/forms";
 @import "./sections/contacts";
 @import "./sections/card";
 
@@ -185,7 +184,6 @@ body {
 @import "./blocks/open-burger";
 @import "./blocks/services-accordeon";
 @import "./blocks/doctors-slide";
-@import "./blocks/form";
 
 // Подключение стилей отдельных страниц
 @import "home";

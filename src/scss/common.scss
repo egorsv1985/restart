@@ -1,71 +1,42 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
-	font-family: 'OnestMedium';
-
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 120%;
-
-	text-align: center;
-
-	color: #0F2F2E;
-
-	@include media (min, lg) {
-		font-size: 40px;
-		line-height: 120%;
-	}
-	&--green {
-
-
-		color: #53CD8B;
-		
-
-
-	}
-
-
+	font-family: "NormalidadCompact-Bold";
+  font-weight: 700;
+  font-size: 310px;
+  line-height: 419px;
+text-align: center;
+  color: $textMainColor;
+  max-width: 100%;
 }
 
 .subtitle {
-	font-family: 'OnestRegular';
-	font-size: 8px;
-	line-height: 150%;
-	color: #707777;
+  font-family: "micra-bold";
 
-	@include media (min, lg) {
-		font-size: 16px;
-	}
-
-
-}
-
-.title--color {
-	color: #53CD8B;
+  font-size: 59px;
+  line-height: 61px;
+  font-weight: 700;
+  color: $textMainColor;
 }
 
 .text {
-	font-family: 'OnestRegular';
-	font-size: 12px;
-	line-height: 150%;
-	text-align: center;
+  font-family: "OnestRegular";
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
 
-	color: #0F2F2E;
+  color: #0f2f2e;
 
-	@include media (min, lg) {
-		font-size: 16px;
-	}
+  @include media(min, lg) {
+    font-size: 16px;
+  }
 
-	&--decoration {
-		text-decoration: underline;
-	}
+  &--decoration {
+    text-decoration: underline;
+  }
 
-	&--green {
-
-
-		color: #53CD8B;
-		margin-bottom: 30px;
-
-
-	}
+  &--green {
+    color: #53cd8b;
+    margin-bottom: 30px;
+  }
 }
