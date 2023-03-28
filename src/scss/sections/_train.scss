@@ -1,0 +1,42 @@
+.train {
+	position: relative;
+	padding-top: 140px;
+  // .train__wrapper
+  &__wrapper {
+    @include flex(space-between, $flex-direction: column);
+    gap: 100px;
+  }
+  // .train__title
+  &__title {
+	&::after{
+		left: -10%;
+	}
+  }
+  // .train__content
+  &__content {
+    @include flex(space-between, center);
+  }
+  // .train__box
+  &__box {
+    @include flex(center, center);
+    position: relative;
+    width: 425px;
+    height: 649px;
+  }
+  // .train__img
+  &__img {
+    position: absolute;
+  }
+  // .train__subtitle
+  &__subtitle {
+    position: relative;
+    z-index: 1;
+    
+
+    font-family: "micra-bold";
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
