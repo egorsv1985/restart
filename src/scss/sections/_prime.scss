@@ -1,7 +1,7 @@
 .prime {
   // .prime__wrapper
   &__wrapper {
-    @include flex(space-between, center);
+    @include flex(space-between, flex-end);
     position: relative;
     gap: 20px;
   }
@@ -9,42 +9,58 @@
   // .prime__box-img
   &__box-img {
     min-width: 520px;
-    height: 1090px;
+    height: 650px;
+    position: relative;
+    &::before{
+      @include pseudo;
+      position: absolute;
+      top: 27%;
+      left: 0;
+     @include wh(454px);
+
+
+background-color: #FFF;
+filter: blur(150px);
+
+    }
+    img {
+      position: absolute;
+      top: 3%;
+      left: -14%;
+    }
   }
   // .prime__img
   &__img {
-    position: absolute;
-    top: 3%;
-    left: -5%;
+    position: relative;
+    z-index: 1;
   }
   // .prime__content
   &__content {
     @include flex(space-between, center, $flex-direction: column);
     gap: 30px;
+    margin-bottom: -55px;
   }
   // .prime__subtitle
   &__subtitle {
-	
   }
   // .prime__form
   &__form {
   }
   .form {
-	@include flex(space-between, $flex-direction: column);
-	gap: 30px;
+    @include flex(space-between, $flex-direction: column);
+    gap: 30px;
     // .form__body
     &__body {
       height: 100%;
       width: 100%;
       border: none;
       display: flex;
-     
+
       gap: 16px;
       position: relative;
     }
     // .form__box
     &__box {
-      
       position: relative;
     }
     // .form__input
@@ -96,10 +112,10 @@
       line-height: 20px;
 
       color: $textAccentColor;
-	  position: absolute;
-	  top: 50%;
-	  transform: translateY(-50%);
-	  left: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
     }
     // .form__btn
     &__btn {
@@ -124,8 +140,8 @@
     // .form__checkbox
     &__checkbox {
       margin-bottom: rem(19);
-	  max-width: 525px;
-	  padding-left: 30px;
+      max-width: 525px;
+      padding-left: 30px;
     }
   }
 
@@ -146,7 +162,7 @@
         left: 0px;
         top: 2px;
         font-size: 16px;
-      
+
         color: $accentColor;
         opacity: 0;
         transition: all 0.3s ease 0s;
@@ -155,9 +171,9 @@
       &::after {
         content: "";
         align-self: flex-start;
-       flex: 0 0 25px;
+        flex: 0 0 25px;
         @include wh(25px);
-        
+
         border: 1px solid #000;
         background-color: #fff;
         margin-right: rem(14);
@@ -169,17 +185,11 @@
 
       font-size: 20px;
       line-height: 20px;
-	  font-weight: 300;
-
+      font-weight: 300;
     }
   }
-  .checkbox__input:checked+.checkbox__label::before {
+  .checkbox__input:checked + .checkbox__label::before {
     opacity: 1;
-}
-  // .prime__title
-  &__title {
-	position: absolute;
-	bottom: 20px;
-	left: 0;
   }
+  
 }

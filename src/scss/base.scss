@@ -149,11 +149,9 @@ body {
 }
 
 .container {
-	max-width: 1415px;
+	max-width: 1455px;
 	padding: 0 20px;
 	margin: 0 auto;
 
-	@include media (min, lg) {
-		padding: 0 15px;
-	}
+	
 }

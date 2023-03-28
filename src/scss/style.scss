@@ -29,7 +29,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1700;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1415;
+$maxWidthContainer: 1435;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -156,7 +156,7 @@ body {
 
 @import "./components/btn";
 @import "./components/burger";
-@import "./components/swiper";
+// @import "./components/swiper";
 @import "./components/social";
 @import "./components/breadcrumb";
 @import "./components/scroll-header";
@@ -166,7 +166,7 @@ body {
 // sections
 
 @import "./sections/prime";
-@import "./sections/services";
+@import "./sections/gallery";
 @import "./sections/about";
 @import "./sections/consultations";
 @import "./sections/reviews";
