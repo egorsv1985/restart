@@ -1,4 +1,5 @@
 .prime {
+  position: relative;
   // .prime__wrapper
   &__wrapper {
     @include flex(space-between, flex-end);
@@ -191,5 +192,19 @@ filter: blur(150px);
   .checkbox__input:checked + .checkbox__label::before {
     opacity: 1;
   }
-  
+  // .prime__ellipse
+  &__ellipse {
+	
+    position: absolute;
+    width: 545px;
+    height: 545px;
+    right: -10%;
+    bottom: 0;
+    border-radius: 50%;
+    
+    background-color: rgba(234, 0, 70, 0.7);
+    filter: blur(150px);
+    z-index: -1;
+    
+      }
 }
