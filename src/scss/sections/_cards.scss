@@ -1,4 +1,6 @@
 .cards {
+  position: relative;
+  padding: 50px 0;
   // .cards__wrapper
   &__wrapper {
   }
@@ -23,6 +25,12 @@
       border: 3px solid #eecf60;
 
       padding: 90px 28px 40px;
+      background: linear-gradient(
+        90deg,
+        #f6d4a6 0%,
+        #c69e6d 0.01%,
+        #f7d5a8 100%
+      );
     }
     // .swiper__subtitle
     &__subtitle {
@@ -53,8 +61,6 @@
     // .swiper__btn
     &__btn {
       @include flex(center, center);
-      width: 313px;
-      height: 78px;
 
       background: linear-gradient(90deg, #c8a06f 0%, #f8d6a9 100%);
       border-radius: 33px 0px;
@@ -63,6 +69,12 @@
       font-weight: 800;
       font-size: 45px;
       line-height: 45px;
+
+      width: 372px;
+      height: 78px;
+
+      background: #010101;
+      border-radius: 33px 0px;
     }
   }
   .cardsSwiper {
@@ -73,6 +85,15 @@
     &:nth-child(1),
     &:nth-child(3) {
       margin-top: 50px;
+      .swiper__item {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+      }
+      .swiper__btn {
+        width: 313px;
+
+        background: linear-gradient(90deg, #c8a06f 0%, #f8d6a9 100%);
+      }
     }
   }
   .subtitle {
@@ -82,6 +103,20 @@
   .btn {
   }
   .swiper-slide-active {
+  }
+
+  // .cards__ellipse
+  &__ellipse {
+    position: absolute;
+    width: 627px;
+    height: 627px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    filter: blur(150px);
+    z-index: -1;
   }
 }
 .container {
