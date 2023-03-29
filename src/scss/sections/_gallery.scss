@@ -227,22 +227,14 @@
 
 .swiper-button-prev.swiper-button-disabled {
   &::after {
-	transform: translate(-50%, -50%) rotate(0deg);
+	// transform: translate(-50%, -50%) rotate(0deg);
 	
   }
 }
 
 .swiper-button-next.swiper-button-disabled {
   &::after {
-	transform: translate(-50%, -50%) rotate(180deg);
+	// transform: translate(-50%, -50%) rotate(180deg);
   }
 }
-}
-.container {
-}
-.title {
-}
-.text {
-}
-.btn {
 }
