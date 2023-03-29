@@ -1,6 +1,6 @@
 .train {
-	position: relative;
-	padding-top: 140px;
+  position: relative;
+  padding: 140px 0 100px;
   // .train__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
@@ -8,9 +8,9 @@
   }
   // .train__title
   &__title {
-	&::after{
-		left: -10%;
-	}
+    &::after {
+      left: -10%;
+    }
   }
   // .train__content
   &__content {
@@ -31,7 +31,6 @@
   &__subtitle {
     position: relative;
     z-index: 1;
-    
 
     font-family: "micra-bold";
     font-weight: 700;
