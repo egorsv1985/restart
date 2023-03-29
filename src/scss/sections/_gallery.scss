@@ -1,65 +1,6 @@
-.doctors {
-  padding-top: 40px;
-
-  @include media(min, lg) {
-    padding-top: 105px;
-  }
-
-  // .doctors__wrapper
-  &__wrapper {
-    @include flex($flex-direction: column);
-  }
-
-  // .doctors__title
-  &__title {
-    text-align: left;
-    margin-bottom: 20px;
-
-    @include media(min, lg) {
-      margin-bottom: 40px;
-    }
-  }
-
-  // .doctors__box
-  &__box {
-    position: relative;
-  }
-
-  // .doctors__swiper
-  .swiper {
-    margin-bottom: 20px;
-    max-width: 100%;
-  }
-
-  // .doctors__buttons
-  &__buttons {
-    position: relative;
-    @include flex(space-between, center);
-    gap: 13px;
-    width: 100px;
-    right: -180px;
-
-    @include media(min, lg) {
-      gap: 20px;
-      width: 150px;
-      right: -87%;
-      top: -520px;
-    }
-  }
-
-  // .doctors__btn
-  &__btn {
-    width: 140px;
-
-    @include media(min, lg) {
-      width: 220px;
-      margin: 0 auto;
-    }
-  }
-}
 .gallery {
   position: relative;
-  padding-top: 295px;
+  padding: 270px 0 230px;
   // .gallery__wrapper
   &__wrapper {
     position: relative;
@@ -67,56 +8,6 @@
     @include flex(space-between, $flex-direction: column);
     gap: 420px;
   }
-  // .gallery__content
-  &__content {
-  }
-  // .gallery__title
-  &__title {
-  }
-  // .gallery__text
-  &__text {
-  }
-  // .gallery__btn
-  &__btn {
-  }
-  // .gallery__buttons
-  &__buttons {
-  }
-}
-.container {
-}
-.title {
-}
-.text {
-}
-.btn {
-}
-.swiper {
-  // .swiper__item
-  &__item {
-  }
-  // .swiper__box-img
-  &__box-img {
-  }
-  // .swiper__img
-  &__img {
-  }
-}
-.gallerySwiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-button-next {
-}
-.swiper-button-prev {
-}
-
-.gallery {
-  position: relative;
-  padding: 295px 0 230px;
-
   // .gallery__content
   &__content {
     position: relative;
@@ -154,13 +45,13 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
-	width: 174px;
-	height: 80px;
+    z-index: 2;
+    width: 174px;
+    height: 80px;
   }
   .swiper {
     position: absolute;
-    top: 12%;
+    top: 10%;
     // .swiper__item
     &__item {
     }
@@ -170,7 +61,6 @@
     // .swiper__img
     &__img {
     }
-   
   }
   .gallerySwiper {
   }
@@ -179,62 +69,61 @@
   .swiper-slide {
   }
   .swiper-button-next {
-}
-.swiper-button-prev {
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: rgba(1, 1, 1, 0.5);
-  border: 2px solid #fbd8aa;
-
-  @include wh(80px);
-
-  position: absolute;
-  top: 5px;
-
-  border-radius: 50%;
-
-  &::after {
-	@include pseudo;
-	@include wh(29px);
-	@include background(url(../img/icons/arrow.svg));
-	@include pos(absolute, $top: 50%, $left: 56%);
-	transform: translate(-50%, -50%);
   }
-}
-
-.swiper-button-next {
-  right: 0;
-}
-
-.swiper-button-prev {
-  right: 95px;
-  
-  &::after {
-	transform: translate(-50%, -50%) rotate(180deg);
-	left: 42%;
+  .swiper-button-prev {
   }
-}
 
-.swiper-button-disabled {
-  background-color: #fff;
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(1, 1, 1, 0.5);
+    border: 2px solid #fbd8aa;
 
-  &::after {
-	@include background(url(../img/icons/arrow.svg));
+    @include wh(80px);
+
+    position: absolute;
+    top: 5px;
+
+    border-radius: 50%;
+
+    &::after {
+      @include pseudo;
+      @include wh(29px);
+      @include background(url(../img/icons/arrow.svg));
+      @include pos(absolute, $top: 50%, $left: 56%);
+      transform: translate(-50%, -50%);
+    }
   }
-}
 
-.swiper-button-prev.swiper-button-disabled {
-  &::after {
-	// transform: translate(-50%, -50%) rotate(0deg);
-	
+  .swiper-button-next {
+    right: 0;
   }
-}
 
-.swiper-button-next.swiper-button-disabled {
-  &::after {
-	// transform: translate(-50%, -50%) rotate(180deg);
+  .swiper-button-prev {
+    right: 95px;
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(180deg);
+      left: 42%;
+    }
   }
-}
+
+  .swiper-button-disabled {
+    background-color: #fff;
+
+    &::after {
+      @include background(url(../img/icons/arrow.svg));
+    }
+  }
+
+  .swiper-button-prev.swiper-button-disabled {
+    &::after {
+      // transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  .swiper-button-next.swiper-button-disabled {
+    &::after {
+      // transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
 }

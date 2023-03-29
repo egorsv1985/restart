@@ -47,14 +47,10 @@ function initSliders() {
   bildSliders();
 
   // Перечень слайдеров
-  if (document.querySelector(".trustSwiper")) {
+  if (document.querySelector(".trainerSwiper")) {
     new Swiper(".swiper", {
-      modules: [Pagination],
-      pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
-      },
-      slidesPerView: "auto",
+     
+      slidesPerView: 3.5,
       spaceBetween: 10,
       // Responsive breakpoints
       breakpoints: {

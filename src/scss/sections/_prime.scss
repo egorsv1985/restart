@@ -6,7 +6,12 @@
     position: relative;
     gap: 20px;
   }
-
+// .prime__title
+&__title {
+  &::after{
+    display: none;
+  }
+}
   // .prime__box-img
   &__box-img {
     min-width: 520px;
