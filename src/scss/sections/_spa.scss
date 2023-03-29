@@ -1,0 +1,133 @@
+.spa {
+  position: relative;
+  padding: 65px 0;
+  // .spa__wrapper
+  &__wrapper {
+    @include flex(space-between, $flex-direction: column);
+    gap: 50px;
+  }
+  // .spa__title
+  &__title {
+    &::after {
+      left: -10%;
+    }
+  }
+  // .spa__content
+  &__content {
+  }
+  // .spa__box-img
+  &__box-img {
+  }
+  // .spa__img
+  &__img {
+  }
+  // .spa__list
+  &__list {
+  }
+  // .spa__item
+  &__item {
+    @include flex(space-between, center, $flex-direction: column);
+    gap: 20px;
+    max-width: 360px;
+  }
+  // .spa__subtitle
+  &__subtitle {
+    /* SPA ПРОЦЕДУРЫ */
+  }
+  // .spa__text
+  &__text {
+    font-family: "ProximaNova-Regular";
+
+    font-weight: 400;
+
+    line-height: 24px;
+    text-align: center;
+  }
+  // .spa__buttons
+  &__buttons {
+  }
+  // .spa__ellipse1
+  &__ellipse1 {
+  }
+  // .spa__ellipse2
+  &__ellipse2 {
+  }
+  // .spa__ellipse3
+  &__ellipse3 {
+  }
+  .swiper {
+    overflow: visible;
+    .swiper-wrapper {
+      justify-content: center;
+    }
+    // .swiper__item
+    &__item {
+      @include flex(space-between, center, $flex-direction: column);
+      padding: 40px 50px;
+
+      background-color: #fff;
+      transform: rotate(7.23deg);
+    }
+    // .swiper__box-img
+    &__box-img {
+    }
+    // .swiper__img
+    &__img {
+    }
+    // .swiper__box-content
+    &__box-content {
+      @include flex(space-between, center, $flex-direction: column);
+      gap: 10px;
+    }
+    // .swiper__name
+    &__name {
+      font-family: "ProximaNova-Extrabld";
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: center;
+
+      color: #010101;
+    }
+    // .swiper__job
+    &__job {
+      font-family: "ProximaNova-Regular";
+
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+
+      color: #010101;
+    }
+    // .swiper__btn
+    &__btn {
+      @include flex(center, center);
+      padding: 20px 40px;
+
+      background-color: #000;
+      border-radius: 25px;
+      font-family: "ProximaNova-Regular";
+
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: $textMainColor;
+    }
+  }
+  .spaSwiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+  }
+  .btn {
+  }
+  .swiper-button-next {
+  }
+  .swiper-button-prev {
+  }
+}
