@@ -21,9 +21,6 @@
   // .spa__box-img
   &__box-img {
     position: relative;
-  }
-  // .spa__img
-  &__img {
     &:nth-child(1) {
       z-index: 1;
       position: relative;
@@ -43,6 +40,10 @@
       left: 23%;
       top: 30%;
     }
+  }
+  // .spa__img
+  &__img {
+    
   }
   // .spa__list
   &__list {
