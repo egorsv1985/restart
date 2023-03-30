@@ -22,94 +22,87 @@
    @include media(min-max, 870px, 1000px) { display: none;}
 --------------------------------------------------------------------*/
 @font-face {
-  font-family: icons;
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: micra;
-  font-display: swap;
-  src: url("../fonts/micra-bold.woff2") format("woff2"), url("../fonts/micra-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: micra;
-  font-display: swap;
-  src: url("../fonts/micra.woff2") format("woff2"), url("../fonts/micra.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Mulish;
+  font-family: "Mulish-Regular";
   font-display: swap;
   src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: NormalidadCompact;
+  font-family: "ProximaNova-BlackIt";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-BlackIt.woff2") format("woff2"), url("../fonts/ProximaNova-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "micra-bold";
+  font-display: swap;
+  src: url("../fonts/micra-bold.woff2") format("woff2"), url("../fonts/micra-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NormalidadCompact-Bold";
   font-display: swap;
   src: url("../fonts/NormalidadCompact-Bold.woff2") format("woff2"), url("../fonts/NormalidadCompact-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: NormalidadWide;
+  font-family: "NormalidadWide-WideLight";
   font-display: swap;
   src: url("../fonts/NormalidadWide-WideLight.woff2") format("woff2"), url("../fonts/NormalidadWide-WideLight.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: ProximaNova;
-  font-display: swap;
-  src: url("../fonts/ProximaNova-BlackIt.woff2") format("woff2"), url("../fonts/ProximaNova-BlackIt.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: NormalidadWide;
-  font-display: swap;
-  src: url("../fonts/NormalidadWide-WideBold.woff2") format("woff2"), url("../fonts/NormalidadWide-WideBold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: ProximaNova;
-  font-display: swap;
-  src: url("../fonts/ProximaNova-ExtrabldIt.woff2") format("woff2"), url("../fonts/ProximaNova-ExtrabldIt.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: ProximaNova;
-  font-display: swap;
-  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: "micra";
   font-display: swap;
-  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  src: url("../fonts/micra.woff2") format("woff2"), url("../fonts/micra.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: "ProximaNova-Black";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NormalidadWide-WideBold";
+  font-display: swap;
+  src: url("../fonts/NormalidadWide-WideBold.woff2") format("woff2"), url("../fonts/NormalidadWide-WideBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
   font-display: swap;
   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: ProximaNova;
+  font-family: "ProximaNova-ExtrabldIt";
   font-display: swap;
-  src: url("../fonts/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova-Black.woff") format("woff");
-  font-weight: 900;
+  src: url("../fonts/ProximaNova-ExtrabldIt.woff2") format("woff2"), url("../fonts/ProximaNova-ExtrabldIt.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ProximaNova-Extrabld";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 [class*=_icon-]:before {
@@ -271,6 +264,10 @@ h6 {
   padding: 0 0.9375rem;
 }
 
+.img {
+  margin-left: 20px;
+}
+
 .title {
   font-family: "micra-bold";
   font-size: 59px;
@@ -307,6 +304,9 @@ h6 {
   font-size: 20px;
   line-height: 20px;
   color: #fff;
+}
+.text--right {
+  text-align: right;
 }
 
 body::after {
@@ -985,7 +985,7 @@ body {
 }
 .contacts {
   position: relative;
-  padding: 120px 0;
+  padding: 120px 0 50px;
 }
 .contacts__wrapper {
   display: flex;
@@ -1707,6 +1707,9 @@ body {
   color: #000;
 }
 
+.footer {
+  padding-bottom: 70px;
+}
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1715,25 +1718,14 @@ body {
 .footer__box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
 }
 .footer__text {
-  /* Политика конфиденциальности */
-  position: absolute;
-  width: 332px;
-  height: 23px;
-  left: 143px;
-  top: 9256px;
-  font-family: "Mulish";
-  font-style: normal;
+  font-family: "Mulish-Regular";
   font-weight: 400;
   font-size: 20px;
   line-height: 113%;
-  /* identical to box height, or 23px */
-  text-align: center;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
 }
 .nav__list {
   display: flex;
