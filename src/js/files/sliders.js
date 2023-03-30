@@ -50,15 +50,15 @@ function initSliders() {
   if (document.querySelector(".trainerSwiper")) {
     new Swiper(".swiper", {
      
-      slidesPerView: 3.5,
+		slidesPerView: 5,
       spaceBetween: 10,
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 1279 px
-        1279: {
-          // 		// slidesPerView: 2,
-          spaceBetween: 40,
-        },
+        // 1279: {
+        //   // 		// slidesPerView: 2,
+        //   spaceBetween: 40,
+        // },
 
         // 	// when window width is >= 1024px
         // 	768: {
@@ -123,7 +123,7 @@ function initSliders() {
       },
 
       slidesPerView: "3",
-      spaceBetween: 10,
+      spaceBetween: 40,
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 1279 px

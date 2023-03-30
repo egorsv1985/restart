@@ -38,7 +38,7 @@
   }
   // .trainer__tabpanel
   &__tabpanel {
-    margin-top: 90px;
+    margin-top: 115px;
   }
   .tabpanel {
     // .tabpanel__body
@@ -54,22 +54,32 @@
     }
     // .swiper__item
     &__item {
-      @include flex(space-between, center, $flex-direction: column);
-      padding: 40px 50px;      
+      @include flex(space-between, $flex-direction: column);
+      padding: 20px 30px 16px;
 
       background-color: #fff;
-      transform: rotate(7.23deg);
+      
+
+      
+    max-width: 375px;
     }
     // .swiper__box-img
     &__box-img {
+      max-width: 375px;
+    align-self: center;
+    margin-bottom: 25px;
     }
     // .swiper__img
     &__img {
+      transform: rotate(7deg);
     }
     // .swiper__box-content
     &__box-content {
-      @include flex(space-between, center, $flex-direction: column);
+      @include flex(space-between, $flex-direction: column);
       gap: 10px;
+
+    
+    margin-bottom: 20px;
     }
     // .swiper__name
     &__name {
@@ -77,7 +87,6 @@
       font-weight: 800;
       font-size: 25px;
       line-height: 25px;
-      text-align: center;
 
       color: #010101;
     }
@@ -88,14 +97,13 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
-      text-align: center;
 
       color: #010101;
     }
     // .swiper__btn
     &__btn {
       @include flex(center, center);
-      padding: 20px 40px;
+      padding: 15px 40px;
 
       background-color: #000;
       border-radius: 25px;
@@ -108,6 +116,8 @@
       text-transform: uppercase;
 
       color: $textMainColor;
+
+      
     }
   }
   .trainerSwiper {
@@ -115,6 +125,16 @@
   .swiper-wrapper {
   }
   .swiper-slide {
+
+    transform: rotate(-7deg);
+  &:nth-child(2n) {
+    transform: rotate(7deg);
+    position: relative;
+    z-index: 1;
+    .swiper__img {
+      transform: rotate(-7deg);
+    }
+  }
   }
 }
 

@@ -1,6 +1,6 @@
 .spa {
   position: relative;
-  padding: 65px 0 110px;
+  padding: 95px 0 110px;
   // .spa__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
@@ -43,6 +43,25 @@
   }
   // .spa__img
   &__img {
+    &:nth-child(1) {
+      z-index: 1;
+      position: relative;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      left: 16%;
+      top: 14%;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      left: 2%;
+      top: 30%;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      left: 23%;
+      top: 30%;
+    }
     
   }
   // .spa__list
@@ -126,29 +145,39 @@
     overflow: visible;
     position: absolute;
     bottom: 13%;
-    right: -35%;
-    width: 97%;
+    right: -39%;
+    width: 100%;
     .swiper-wrapper {
       justify-content: center;
     }
     // .swiper__item
     &__item {
-      @include flex(space-between, center, $flex-direction: column);
-      padding: 40px 50px;
+      @include flex(space-between, $flex-direction: column);
+      padding: 20px 30px 16px;
 
       background-color: #fff;
-      transform: rotate(7.23deg);
+      
+
+      
+    max-width: 390px;
     }
     // .swiper__box-img
     &__box-img {
+      max-width: 390px;
+      align-self: center;
+      margin-bottom: 25px;
     }
     // .swiper__img
     &__img {
+      transform: rotate(-7deg);
     }
     // .swiper__box-content
     &__box-content {
-      @include flex(space-between, center, $flex-direction: column);
+      @include flex(space-between, $flex-direction: column);
       gap: 10px;
+
+    
+    margin-bottom: 20px;
     }
     // .swiper__name
     &__name {
@@ -156,7 +185,6 @@
       font-weight: 800;
       font-size: 25px;
       line-height: 25px;
-      text-align: center;
 
       color: #010101;
     }
@@ -167,14 +195,13 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
-      text-align: center;
 
       color: #010101;
     }
     // .swiper__btn
     &__btn {
       @include flex(center, center);
-      padding: 20px 40px;
+      padding: 15px 40px;
 
       background-color: #000;
       border-radius: 25px;
@@ -194,6 +221,7 @@
   .swiper-wrapper {
   }
   .swiper-slide {
+    transform: rotate(7deg);
   }
   .btn {
   }
