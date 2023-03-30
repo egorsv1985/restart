@@ -3479,9 +3479,9 @@
     le(),
       document.querySelector(".trainerSwiper") &&
         new ae(".swiper", {
-          slidesPerView: 3.5,
+          slidesPerView: 5,
           spaceBetween: 10,
-          breakpoints: { 1279: { spaceBetween: 40 } },
+          breakpoints: {},
         }),
       document.querySelector(".gallerySwiper") &&
         new ae(".swiper", {
@@ -3510,7 +3510,7 @@
             prevEl: ".swiper-button-prev",
           },
           slidesPerView: "3",
-          spaceBetween: 10,
+          spaceBetween: 40,
           breakpoints: { 1279: { spaceBetween: 40 } },
         });
   });

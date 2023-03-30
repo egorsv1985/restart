@@ -934,7 +934,7 @@ body {
   color: #fff;
 }
 .trainer__tabpanel {
-  margin-top: 90px;
+  margin-top: 115px;
 }
 .trainer .swiper {
   overflow: visible;
@@ -945,25 +945,31 @@ body {
 .trainer .swiper__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  padding: 40px 50px;
+  padding: 20px 30px 16px;
   background-color: #fff;
-  transform: rotate(7.23deg);
+  max-width: 375px;
+}
+.trainer .swiper__box-img {
+  max-width: 375px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+.trainer .swiper__img {
+  transform: rotate(7deg);
 }
 .trainer .swiper__box-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .trainer .swiper__name {
   font-family: "ProximaNova-Extrabld";
   font-weight: 800;
   font-size: 25px;
   line-height: 25px;
-  text-align: center;
   color: #010101;
 }
 .trainer .swiper__job {
@@ -971,14 +977,13 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   color: #010101;
 }
 .trainer .swiper__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background-color: #000;
   border-radius: 25px;
   font-family: "ProximaNova-Regular";
@@ -989,6 +994,18 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+.trainer .swiper-slide {
+  transform: rotate(-7deg);
+}
+.trainer .swiper-slide:nth-child(2n) {
+  transform: rotate(7deg);
+  position: relative;
+  z-index: 1;
+}
+.trainer .swiper-slide:nth-child(2n) .swiper__img {
+  transform: rotate(-7deg);
+}
+
 .contacts {
   position: relative;
   padding: 120px 0 50px;
@@ -1170,7 +1187,6 @@ body {
 }
 
 .kids {
-  padding: 35px 0;
   position: relative;
 }
 .kids__wrapper {
@@ -1303,7 +1319,7 @@ body {
 
 .spa {
   position: relative;
-  padding: 65px 0 110px;
+  padding: 95px 0 110px;
 }
 .spa__wrapper {
   display: flex;
@@ -1339,6 +1355,25 @@ body {
   top: 30%;
 }
 .spa__box-img picture:nth-child(4) {
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
+.spa__img:nth-child(1) {
+  z-index: 1;
+  position: relative;
+}
+.spa__img:nth-child(2) {
+  position: absolute;
+  left: 16%;
+  top: 14%;
+}
+.spa__img:nth-child(3) {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+.spa__img:nth-child(4) {
   position: absolute;
   left: 23%;
   top: 30%;
@@ -1414,8 +1449,8 @@ body {
   overflow: visible;
   position: absolute;
   bottom: 13%;
-  right: -35%;
-  width: 97%;
+  right: -39%;
+  width: 100%;
 }
 .spa .swiper .swiper-wrapper {
   justify-content: center;
@@ -1423,25 +1458,31 @@ body {
 .spa .swiper__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  padding: 40px 50px;
+  padding: 20px 30px 16px;
   background-color: #fff;
-  transform: rotate(7.23deg);
+  max-width: 390px;
+}
+.spa .swiper__box-img {
+  max-width: 390px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+.spa .swiper__img {
+  transform: rotate(-7deg);
 }
 .spa .swiper__box-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .spa .swiper__name {
   font-family: "ProximaNova-Extrabld";
   font-weight: 800;
   font-size: 25px;
   line-height: 25px;
-  text-align: center;
   color: #010101;
 }
 .spa .swiper__job {
@@ -1449,14 +1490,13 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   color: #010101;
 }
 .spa .swiper__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background-color: #000;
   border-radius: 25px;
   font-family: "ProximaNova-Regular";
@@ -1466,6 +1506,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+.spa .swiper-slide {
+  transform: rotate(7deg);
 }
 .spa .swiper-button-next,
 .spa .swiper-button-prev {
