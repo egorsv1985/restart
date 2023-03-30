@@ -17,6 +17,9 @@
     min-width: 520px;
     height: 650px;
     position: relative;
+    picture{
+      
+    }
     &::before{
       @include pseudo;
       position: absolute;
