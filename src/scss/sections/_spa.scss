@@ -21,21 +21,21 @@
   // .spa__box-img
   &__box-img {
     position: relative;
-    &:nth-child(1) {
+    picture:nth-child(1) {
       z-index: 1;
       position: relative;
     }
-    &:nth-child(2) {
+    picture:nth-child(2) {
       position: absolute;
       left: 16%;
       top: 14%;
     }
-    &:nth-child(3) {
+    picture:nth-child(3) {
       position: absolute;
       left: 2%;
       top: 30%;
     }
-    &:nth-child(4) {
+    picture:nth-child(4) {
       position: absolute;
       left: 23%;
       top: 30%;
