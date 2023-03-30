@@ -786,7 +786,7 @@
       k
     );
   }
-  const B = {
+  const $ = {
     on(e, t, s) {
       const i = this;
       if (!i.eventsListeners || i.destroyed) return i;
@@ -868,7 +868,7 @@
       );
     },
   };
-  const $ = {
+  const B = {
     updateSize: function () {
       const e = this;
       let t, s;
@@ -2564,8 +2564,8 @@
     };
   }
   const ie = {
-      eventsEmitter: B,
-      update: $,
+      eventsEmitter: $,
+      update: B,
       translate: D,
       transition: {
         setTransition: function (e, t) {
@@ -3485,22 +3485,21 @@
         }),
       document.querySelector(".gallerySwiper") &&
         new ae(".swiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          slidesPerView: "auto",
-        }),
-      document.querySelector(".opportunitiesSwiper") &&
-        new ae(".swiper", {
           modules: [oe],
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
           slidesPerView: "auto",
-          spaceBetween: 10,
-          breakpoints: { 1279: { spaceBetween: 40 } },
+        }),
+      document.querySelector(".spaSwiper") &&
+        new ae(".swiper", {
+          modules: [oe],
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: 1,
         }),
       document.querySelector(".cardsSwiper") &&
         new ae(".swiper", {

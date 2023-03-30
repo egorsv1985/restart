@@ -49,8 +49,7 @@ function initSliders() {
   // Перечень слайдеров
   if (document.querySelector(".trainerSwiper")) {
     new Swiper(".swiper", {
-     
-		slidesPerView: 5,
+      slidesPerView: 5,
       spaceBetween: 10,
       // Responsive breakpoints
       breakpoints: {
@@ -59,7 +58,6 @@ function initSliders() {
         //   // 		// slidesPerView: 2,
         //   spaceBetween: 40,
         // },
-
         // 	// when window width is >= 1024px
         // 	768: {
         // 		// slidesPerView: 3,
@@ -75,6 +73,7 @@ function initSliders() {
   }
   if (document.querySelector(".gallerySwiper")) {
     new Swiper(".swiper", {
+      modules: [Navigation],
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -83,35 +82,14 @@ function initSliders() {
       slidesPerView: "auto",
     });
   }
-  if (document.querySelector(".opportunitiesSwiper")) {
+  if (document.querySelector(".spaSwiper")) {
     new Swiper(".swiper", {
       modules: [Navigation],
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
-      slidesPerView: "auto",
-      spaceBetween: 10,
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is >= 1279 px
-        1279: {
-          // 		// slidesPerView: 2,
-          spaceBetween: 40,
-        },
-
-        // 	// when window width is >= 1024px
-        // 	768: {
-        // 		// slidesPerView: 3,
-        // 		spaceBetween: 30
-        // 	},
-        // 	// when window width is >= 1280px
-        // 	1280: {
-        // 		// slidesPerView: 4,
-        // 		spaceBetween: 40
-        // 	}
-      },
+      slidesPerView: 1,
     });
   }
   if (document.querySelector(".cardsSwiper")) {

@@ -1,6 +1,6 @@
 .trainer {
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 65px;
   // .trainer__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
@@ -125,6 +125,7 @@
   .swiper-wrapper {
   }
   .swiper-slide {
+    max-width: 390px;
 
     transform: rotate(-7deg);
   &:nth-child(2n) {
