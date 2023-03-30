@@ -1,203 +1,25 @@
 .footer {
-  padding-top: 40px;
-
-  @include media (min, lg) {
-    padding-top: 105px;
-  }
-
+  padding-bottom: 70px;
   // .footer__wrapper
   &__wrapper {
-    @include flex ($flex-wrap: wrap, $flex-direction: column);
-    background-color: #0F2F2E;
-    border-radius: 30px 30px 0px 0px;
-    padding: 45px 20px;
-    
-
-    @include media (min, lg) {
-      
-      padding: 90px 40px;
-      flex-direction: row;
-      
-    }
-    @include media (min, xl) {
-      border-radius: 40px 40px 0px 0px;
-      padding: 120px 140px 110px;
-      
-    }
-
+    @include flex(space-between, center);
   }
-
-  // .footer__logo
-  &__logo {
-    margin-bottom: 40px;
-    @include media (min, lg) {
-      margin-bottom: 0;
-      width: 18%;
-    }
-    @include media (min, xl) {
-     
-      width: 26%;
-    }
-  }
-
-  // .footer__nav
-  &__nav {
-    margin-bottom: 45px;
-    @include media (min, lg) {
-      margin-bottom: 0;
-      width: 27%;
-    }
-    
-  }
-
-
-  .nav {
-
-    // .nav__list
-    &__list {
-      padding-left: 35px;
-      gap: 28px;
-      @include media (min, lg) {
-        flex-direction: column;
-      }
-    }
-    
-
-    &__list-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding-left: 0;
-      gap: 20px;
-      @include media (min, lg) {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        .nav__item{
-          font-size: 16px;
-        }
-      }
-      
-
-      .nav__item {
-        color: #fff;
-      }
-    }
-
-    &--services{
-      @include media (min, lg) {
-        width: 15%;
-      margin-left: 90px;
-      margin-right: 20px;
-      }
-      
-    }
-
-    // .nav__item
-    &__item {
-
-      font-size: 12px;
-
-
-      color: #707777;
-      @include media (min, lg) {
-        font-size: 14px;
-      }
-
-
-    }
-
-  }
-
-
-		// .footer__inner
-		&__inner {
-      @include flex ( $flex-direction: column);
-      @include media (min, lg) {
-        width: 260px;
-        gap: 60px;
-      }
-    }
-
-
-
-  // .footer__btn
-  &__btn {
-    width: 280px;
-    margin: 0 auto 20px;
-    @include media (min, lg) {
-      width: 260px;
-      margin: 0;
-    }
-  }
-
-  // .footer__social
-  &__social {
-    margin-bottom: 35px;
-    @include media (min, lg) {
-      margin-bottom: 0;
-    }
-  }
-
-  // .footer__bottom
-  &__bottom {
-    @include flex ($flex-direction: column);
-    @include media (min, lg) {
-      flex-direction: row;
-      width: 100%;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-top: 50px;
-    }
-    @include media (min, xl) {
-      margin-top: 77px;
-    }
-  }
-
-  // .footer__wrap
-  &__wrap {
-    @include flex ($flex-direction:column);
-    margin-bottom: 20px;
-    @include media (min, lg) {
-      margin-bottom: 0;
-      
-    }
-  }
-
-  // .footer__text
-  &__text {
-
-    font-size: 12px;
-    line-height: 130%;
-
-    color: #707777;
-    text-align: left;
-    @include media (min, lg) {
-      font-size: 16px;
-    }
-
-
-  }
-
-  // .footer__link
-  &__link {
-
-    font-size: 12px;
-    line-height: 130%;
-    text-decoration: underline;
-
-    color: #53CD8B;
-    margin-bottom: 40px;
-    @include media (min, lg) {
-      margin-bottom: 0;
-     font-size: 16px;
-     
-    }
-  }
-
   // .footer__box
   &__box {
-    @include flex (space-between, center);
-    @include media (min, lg) {
-      gap: 64px;
-    }
+    @include flex(space-between, $flex-direction: column);
+  }
+  // .footer__text
+  &__text {
+    font-family: "Mulish-Regular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 113%;
+    letter-spacing: 0.04em;
+   
+  }
+  // .footer__logo
+  &__logo {
   }
 }
+
+

@@ -1,160 +1,111 @@
 .contacts {
-	padding-top: 110px;
-	padding-bottom: 40px;
+  position: relative;
+  padding: 120px 0 50px;
+  // .contacts__wrapper
+  &__wrapper {
+    @include flex(space-between);
+  }
+  // .contacts__title
+  &__title {
+    margin-bottom: 40px;
+    &::after {
+      left: -22%;
+    }
+  }
+  // .contacts__content
+  &__content {
+    @include flex($flex-direction: column);
+  }
+  // .contacts__box-content
+  &__box-content {
+	@include flex ($flex-direction: column);
+  }
+  // .contacts__list
+  &__list {
+    @include flex(space-between, $flex-direction: column);
+    padding-left: 23px;
+    max-width: 385px;
+    margin-bottom: 15px;
+  }
+  // .contacts__item
+  &__item {
+    font-family: "ProximaNova-Regular";
 
-	@include media (min, lg) {
-		padding-top: 220px;
-		padding-bottom: 100px;
-	}
-
-	// .contacts__title
-	&__title {
-		text-align: left;
-		margin-bottom: 30px;
-
-		@include media (min, lg) {
-			margin-bottom: 40px;
-		}
-	}
-
-	// .contacts__wrapper
-	&__wrapper {
-		@include flex ($flex-direction: column);
-
-		@include media (min, lg) {
-			flex-direction: row;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			gap: 20px;
-		}
-	}
-
-	// .contacts__block
-	&__block {
-		@include flex ($flex-direction: column);
-		max-width: 560px;
-		gap: 36px;
-
-
-		background-color: #FFFFFF;
-		border-radius: 30px;
-		padding: 30px 0 45px;
-		margin-bottom: 40px;
-
-		@include media (min, lg) {
-			border-radius: 40px;
-			margin-bottom: 0;
-			padding-top: 45px;
-			gap: 50px;
-			width: 100%;
-
-		}
-
-
-	}
-
-	// .contacts__nav
-	.nav {
-
-		// .nav__list
-		&__list {
-			padding-left: 0;
-			gap: 12px;
-
-			@include media (min, lg) {
-				flex-direction: column;
-
-				gap: 18px;
-			}
-		}
-
-		// .nav__item
-		&__item {
-			font-size: 12px;
-			line-height: 18px;
-			padding: 12px 0;
-			padding-left: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    &::before {
+      @include pseudo;
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &--time {
+      &::before {
+        background-image: url(../img/icons/time-contacts.svg);
+        @include wh(12px);
+      }
+    }
+    &--tel::before {
+      background-image: url(../img/icons/tel-contacts.svg);
+      @include wh(11px);
+    }
+    &--viber {
+      margin-bottom: 15px;
+      &::before {
+        background-image: url(../img/icons/viber-contacts.svg);
+        @include wh(12px);
+      }
+    }
+    &--map {
+      margin-bottom: 10px;
+      &::before {
+        background-image: url(../img/icons/map-contacts.svg);
+        @include wh(11px, 13px);
+        top: 20%;
+      }
+    }
+  }
 
 
-			@include media (min, lg) {
+  // .contacts__social-list
+  &__social-list {
+    @include flex(space-between, center);
+    gap: 50px;
+    max-width: 130px;
+    padding-left: 23px;
+    margin-bottom: 50px;
+  }
+  // .contacts__social-item
+  &__social-item {
+  }
+  // .contacts__social-link
+  &__social-link {
+  }
+  // .contacts__img
+  &__img {
+  }
+  // .contacts__btn
+  &__btn {
+    @include flex(center, center);
+    padding: 15px 19px;
+    max-width: 656px;
+    height: 78px;
 
-				font-size: 16px;
-				line-height: 20px;
-				padding-left: 100px;
-			}
+    background: linear-gradient(90deg, #c49c6b 39.11%, #f8d3a6 128.36%);
+    border-radius: 33px 0px;
+    font-family: "ProximaNova-Extrabld";
 
-
-			&::after {
-				@include pseudo;
-				@include wh(79%, 1px);
-				@include pos (absolute, $bottom:-6px, $left:50%);
-				background-color: rgba(15, 47, 46, 0.08);
-
-				transform: translateX(-50%);
-
-			}
-
-			&:last-child::after {
-				display: none;
-			}
-
-		}
-
-		&__item--work::before,
-		&__item--mail::before,
-		&__item--tel::before,
-		&__item--map::before {
-			@include pseudo;
-
-			top: 15px;
-			left: 33px;
-
-		}
-
-		// .nav__item--map
-		&__item--map {}
-
-		// .nav__link
-		&__link {}
-
-		// .nav__item--work
-		&__item--work {}
-
-		// .nav__item--mail
-		&__item--mail {}
-
-		// .nav__item--tel
-		&__item--tel {}
-	}
-
-	// .contacts__social
-	&__social {
-		padding-left: 35px;
-		gap: 32px;
-		justify-content: flex-start;
-
-		@include media (min, lg) {
-			padding-left: 65px;
-		}
-
-		// .social__item
-		&__item {}
-
-		// .social__link
-		&__link {}
-
-		// .social__img
-		&__img {}
-	}
-
-
-	// .contacts__map
-	&__map {
-		max-width: 560px;
-		width: 100%;
-		height: 398px;
-
-		border-radius: 40px;
-
-	}
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  // .contacts__map
+  &__map {
+    border-radius: 15px;
+    overflow: hidden;
+  }
 }
+

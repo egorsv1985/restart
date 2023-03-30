@@ -3510,7 +3510,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
-          slidesPerView: "auto",
+          slidesPerView: "3",
           spaceBetween: 10,
           breakpoints: { 1279: { spaceBetween: 40 } },
         });

@@ -27,41 +27,32 @@
     line-height: 26px;
     letter-spacing: 0em;
     position: relative;
+    &::before {
+      @include pseudo;
+      position: absolute;
+      left: -30px;
+      top: 0;
+    }
     &--thin {
       font-family: "ProximaNova-Light";
       font-weight: 300;
       line-height: 20px;
     }
     &--tel::before {
-      @include pseudo;
-      position: absolute;
-      top: 0;
-      left: -30px;
       background-image: url(../img/icons/tel.svg);
       width: 14px;
       height: 15px;
     }
     &--map::before {
-      @include pseudo;
-      position: absolute;
-      top: 0;
-      left: -30px;
       background-image: url(../img/icons/map.svg);
       @include wh(23px);
     }
     &--viber::before {
-      @include pseudo;
-      position: absolute;
-      top: 0;
-      left: -30px;
       background-image: url(../img/icons/viber.svg);
       @include wh(18px);
     }
   }
 
-  // .header__span--thin
-  &__span--thin {
-  }
   // .header__burger
   &__burger {
     transition: transform 0.4s;
@@ -98,18 +89,7 @@
       }
     }
   }
-  // .header__box--time
-  &__box--time::before {
-  }
-  // .header__span--tel
-  &__span--tel {
-  }
-  // .header__span--viber
-  &__span--viber {
-  }
-  // .header__span--map
-  &__span--map {
-  }
+
   // .header__nav
   &__nav {
     display: none;

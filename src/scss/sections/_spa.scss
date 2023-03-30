@@ -1,6 +1,6 @@
 .spa {
   position: relative;
-  padding: 65px 0 80px;
+  padding: 65px 0 110px;
   // .spa__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
@@ -102,7 +102,7 @@
   // .spa__buttons
   &__buttons {
     position: absolute;
-    bottom: 4%;
+    bottom: 6%;
     left: 80%;
     transform: translateX(-50%);
     z-index: 2;

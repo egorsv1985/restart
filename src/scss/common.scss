@@ -42,4 +42,7 @@
   line-height: 20px;
 
   color: $textMainColor;
+  &--right {
+    text-align: right;
+  }
 }

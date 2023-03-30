@@ -122,7 +122,7 @@ function initSliders() {
         prevEl: ".swiper-button-prev",
       },
 
-      slidesPerView: "auto",
+      slidesPerView: "3",
       spaceBetween: 10,
       // Responsive breakpoints
       breakpoints: {
