@@ -44,25 +44,25 @@
   }
   // .spa__img
   &__img {
-    // &:nth-child(1) {
-    //   z-index: 1;
-    //   position: relative;
-    // }
-    // &:nth-child(2) {
-    //   position: absolute;
-    //   left: 16%;
-    //   top: 14%;
-    // }
-    // &:nth-child(3) {
-    //   position: absolute;
-    //   left: 2%;
-    //   top: 30%;
-    // }
-    // &:nth-child(4) {
-    //   position: absolute;
-    //   left: 23%;
-    //   top: 30%;
-    // }
+    &:nth-child(1) {
+      z-index: 1;
+      position: relative;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      left: 16%;
+      top: 14%;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      left: 2%;
+      top: 30%;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      left: 23%;
+      top: 30%;
+    }
     
   }
   // .spa__list
