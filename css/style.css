@@ -1368,6 +1368,25 @@ body {
   left: 23%;
   top: 30%;
 }
+.spa__img:nth-child(1) {
+  z-index: 1;
+  position: relative;
+}
+.spa__img:nth-child(2) {
+  position: absolute;
+  left: 16%;
+  top: 14%;
+}
+.spa__img:nth-child(3) {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+}
+.spa__img:nth-child(4) {
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
 .spa__item {
   display: flex;
   justify-content: space-between;
@@ -1419,21 +1438,56 @@ body {
 }
 .spa__buttons {
   position: absolute;
-  bottom: 6%;
-  left: 80%;
-  transform: translateX(-50%);
+  bottom: -10%;
+  left: 5%;
+  transform: translateX(-50%) rotate(7deg);
   z-index: 2;
   width: 174px;
   height: 80px;
 }
 .spa__ellipse1 {
   z-index: -1;
+  width: 545px;
+  height: 545px;
+  border-radius: 50%;
+  position: absolute;
+  right: -15%;
+  top: 15%;
+  background-color: rgba(234, 0, 70, 0.7);
+  filter: blur(150px);
 }
 .spa__ellipse2 {
   z-index: -1;
+  width: 557px;
+  height: 557px;
+  border-radius: 50%;
+  position: absolute;
+  left: -6%;
+  top: 15%;
+  background-color: rgba(234, 0, 70, 0.7);
+  filter: blur(150px);
 }
 .spa__ellipse3 {
   z-index: -1;
+  width: 419px;
+  height: 419px;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  background-color: rgba(232, 186, 24, 0.7);
+  filter: blur(150px);
+}
+.spa__ellipse4 {
+  z-index: -1;
+  width: 518px;
+  height: 518px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2%;
+  bottom: 20%;
+  background-color: #FFF;
+  filter: blur(150px);
 }
 .spa .swiper {
   overflow: visible;
@@ -1736,14 +1790,14 @@ body {
   max-width: 195px;
   width: 100%;
   height: 73px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 63px;
-  font-family: "ProximaNova-Light";
+  font-family: "ProximaNova-Regular";
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
 }
 
