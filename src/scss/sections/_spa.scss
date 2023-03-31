@@ -73,6 +73,7 @@
     @include flex(space-between, center, $flex-direction: column);
     gap: 20px;
     max-width: 360px;
+    z-index: 2;
     &:nth-child(1) {
       position: absolute;
       top: -10%;
