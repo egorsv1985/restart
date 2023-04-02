@@ -4,6 +4,14 @@
   z-index: 999;
   padding: 50px 0;
 
+  &__block1 {
+    --size-lg: clamp(50px, 40vw + -150px, 250px);
+    --size: clamp(var(--size-lg), 42.86vw + -228.57px, 500px);
+    width: var(--size);
+    height: var(--size);
+    background-color: red;
+  }
+
   // .header__wrapper
   &__wrapper {
     background: rgba(255, 255, 255, 0.01);
@@ -114,5 +122,136 @@
     font-weight: 400;
 
     color: $textAccentColor;
+  }
+}
+
+
+/* Style the header element */
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the container inside the header */
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo element */
+.logo {
+  width: 196px;
+}
+
+/* Style the navigation element */
+.nav {
+  display: none;
+}
+
+/* Style the burger button element */
+.burger {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  z-index: 15;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.burger__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.burger__inner span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .header__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__block {
+    width: 100%;
+  }
+
+  .header__logo {
+    margin-top: 20px;
+  }
+
+  .header__box--time,
+  .header__box--buttons {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav__item {
+    font-size: 20px;
+  }
+
+  .nav__link {
+    color: #fff;
+  }
+
+  .burger {
+    margin-top: 20px;
+  }
+
+  .burger__inner {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .burger__inner span {
+    width: 100%;
+    height: 4px;
+  }
+  
+  .burger.open {
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 }

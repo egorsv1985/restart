@@ -48,7 +48,7 @@ function initSliders() {
 
   // Перечень слайдеров
   if (document.querySelector(".trainerSwiper")) {
-    new Swiper(".swiper", {
+    new Swiper(".trainerSwiper", {
       slidesPerView: 5,
       spaceBetween: 10,
       // Responsive breakpoints
@@ -72,32 +72,33 @@ function initSliders() {
     });
   }
   if (document.querySelector(".gallerySwiper")) {
-    new Swiper(".swiper", {
-      modules: [Navigation],
+    const gallerySwiper = new Swiper('.gallerySwiper', {
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 1,
+      
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.gallerySwiper .swiper-button-next',
+        prevEl: '.gallerySwiper .swiper-button-prev',
       },
-
-      slidesPerView: "auto",
     });
   }
   if (document.querySelector(".spaSwiper")) {
-    new Swiper(".swiper", {
+    new Swiper(".spaSwiper", {
       modules: [Navigation],
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".spaSwiper .swiper-button-next",
+        prevEl: ".spaSwiper .swiper-button-prev",
       },
       slidesPerView: 1,
     });
   }
   if (document.querySelector(".cardsSwiper")) {
-    new Swiper(".swiper", {
+    new Swiper(".cardsSwiper", {
       modules: [Navigation],
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".cardsSwiper .swiper-button-next",
+        prevEl: ".cardsSwiper .swiper-button-prev",
       },
 
       slidesPerView: "3",
@@ -124,6 +125,43 @@ function initSliders() {
     });
   }
 }
+const swiper1 = new Swiper('.swiper-container1', {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-container1 .swiper-button-next',
+    prevEl: '.swiper-container1 .swiper-button-prev',
+  },
+});
+
+const swiper2 = new Swiper('.swiper-container2', {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-container2 .swiper-button-next',
+    prevEl: '.swiper-container2 .swiper-button-prev',
+  },
+});
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
   // Добавление классов слайдера
@@ -164,3 +202,7 @@ window.addEventListener("load", function (e) {
   // Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
   //initSlidersScroll();
 });
+
+
+
+

@@ -308,6 +308,9 @@ export function spollers() {
 Если нужно чтобы табы превращались в "спойлеры", на неком размере экранов, пишем параметры ширины.
 Например: data-tabs="992" - табы будут превращаться в спойлеры на экранах меньше или равно 992px
 */
+
+
+
 export function tabs() {
 	const tabs = document.querySelectorAll('[data-tabs]');
 	let tabsActiveHash = [];

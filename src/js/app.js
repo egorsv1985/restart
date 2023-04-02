@@ -221,3 +221,4 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
