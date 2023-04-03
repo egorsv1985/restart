@@ -22,6 +22,10 @@
   &__title {
     &::after {
       left: -25%;
+      @include media(max, xl) {
+        left: -23%;
+      }
+     
     }
   }
   // .gallery__text

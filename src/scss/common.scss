@@ -21,9 +21,13 @@
     top: 50%;
 
     background-color: #fff;
-    @include media (max, md) {
+    @include media(max, 1150px) {
+      left: -11%;
+    }
+    @include media(max, 1000px) {
       display: none;
     }
+   
   }
 }
 

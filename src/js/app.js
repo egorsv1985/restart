@@ -349,3 +349,13 @@ handleClick();
 createArrowNavigation();
 
 window.onload = handleInitialState;
+
+
+const boxElements = document.querySelectorAll('.cards__box');
+
+boxElements.forEach(box => {
+  box.addEventListener('click', function() {
+    boxElements.forEach(box => box.classList.remove('active'));
+    this.classList.add('active');
+  });
+});

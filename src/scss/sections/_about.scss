@@ -13,15 +13,7 @@
   &__title {
     &::after {
      
-      @include media(max, 1150px) {
-        left: -11%;
-      }
-      @include media(max, 1000px) {
-        left: -13%;
-      }
-      @include media(max, lg) {
-        left: -15%;
-      }
+    
     }
   }
   // .about__list
