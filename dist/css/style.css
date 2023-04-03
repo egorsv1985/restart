@@ -943,7 +943,7 @@ body {
   position: relative;
   min-width: 425px;
   min-height: 649px;
-  width: 100%;
+  max-width: 100%;
 }
 .train__box picture {
   position: absolute;
