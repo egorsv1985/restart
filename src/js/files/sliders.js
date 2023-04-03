@@ -73,9 +73,7 @@ function initSliders() {
   }
   if (document.querySelector(".gallerySwiper")) {
     const gallerySwiper = new Swiper('.gallerySwiper', {
-      direction: 'horizontal',
-      loop: false,
-      slidesPerView: 1,
+
       
       navigation: {
         nextEl: '.gallerySwiper .swiper-button-next',
@@ -83,6 +81,7 @@ function initSliders() {
       },
     });
   }
+  
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {
       modules: [Navigation],
