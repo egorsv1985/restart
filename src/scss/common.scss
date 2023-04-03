@@ -2,9 +2,10 @@
 
 .title {
   font-family: "micra-bold";
-
-  font-size: 59px;
-  line-height: 61px;
+  --font-size-prime: clamp(30px, 2.16vw + 22.21px, 59px);
+  --line-height-prime: clamp(28px, 2.46vw + 19.13px, 61px);
+  font-size: var(--font-size-prime);
+  line-height: var(--line-height-prime);
   font-weight: 700;
   color: $textMainColor;
   text-transform: uppercase;

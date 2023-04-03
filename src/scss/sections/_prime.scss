@@ -5,49 +5,79 @@
     @include flex(space-between, flex-end);
     position: relative;
     gap: 20px;
+    @include media(max, xl) {
+      justify-content: center;
+    }
   }
-// .prime__title
-&__title {
-  &::after{
-    display: none;
+  // .prime__title
+  &__title {
+    &::after {
+      display: none;
+    }
   }
-}
   // .prime__box-img
   &__box-img {
-    min-width: 520px;
+    width: 100%;
     height: 650px;
     position: relative;
-    picture{
-      
+    @include media(max, xl) {
+      position: absolute;
+      height: 100%;
     }
-    &::before{
+
+    &::before {
       @include pseudo;
       position: absolute;
       top: 27%;
       left: 0;
-     @include wh(454px);
+      @include wh(454px);
 
+      background-color: #fff;
+      filter: blur(150px);
 
-background-color: #FFF;
-filter: blur(150px);
+      @include media(max, xl) {
+        top: 100%;
+        left: 50%;
 
+        transform: translate(-50%, -50%);
+        z-index: -2;
+      }
     }
+    picture,
     img {
       position: absolute;
       top: 3%;
       left: -14%;
+      @include media(max, xl) {
+        top: 100%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+      }
+      @include media(max, sm) {
+        width: 100%;
+        height: 100%;
+        top: 50%;
+      }
     }
   }
   // .prime__img
   &__img {
     position: relative;
     z-index: 1;
+    padding: 0 10px;
   }
   // .prime__content
   &__content {
     @include flex(space-between, center, $flex-direction: column);
     gap: 30px;
     margin-bottom: -55px;
+    @include media(max, xl) {
+      margin-top: 150px;
+    }
+    @include media(max, lg) {
+      margin-top: 130px;
+    }
   }
   // .prime__subtitle
   &__subtitle {
@@ -58,6 +88,7 @@ filter: blur(150px);
   .form {
     @include flex(space-between, $flex-direction: column);
     gap: 30px;
+
     // .form__body
     &__body {
       height: 100%;
@@ -67,6 +98,9 @@ filter: blur(150px);
 
       gap: 16px;
       position: relative;
+      @include media(max, lg) {
+        flex-direction: column;
+      }
     }
     // .form__box
     &__box {
@@ -202,17 +236,15 @@ filter: blur(150px);
   }
   // .prime__ellipse
   &__ellipse {
-	
     position: absolute;
     width: 545px;
     height: 545px;
     right: -10%;
     bottom: 0;
     border-radius: 50%;
-    
+
     background-color: rgba(234, 0, 70, 0.7);
     filter: blur(150px);
     z-index: -1;
-    
-      }
+  }
 }
