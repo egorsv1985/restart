@@ -1,360 +1,568 @@
-<section class="trainer">
-	<div class="container trainer__wrapper">
-		<h2 class="trainer__title title">Выбери своего тренера</h2>
-		<!-- Tab semantics -->
-		<ul role="tablist" data-tabs class="trainer__list">
-			<li role="presentation" class="trainer__item">
-				<a role="tab" href="#panel1" id="tab1" data-tabs-titles class="trainer__tab">Инструкторы водных программ</a>
-			</li>
-			<li role="presentation" class="trainer__item">
-				<a role="tab" href="#panel2" id="tab2" data-tabs-titles class="trainer__tab">Инструкторы ТЗ</a>
-			</li>
-			<li role="presentation" class="trainer__item">
-				<a role="tab" href="#panel3" id="tab3" data-tabs-titles class="trainer__tab">Инструкторы ГП</a>
-			</li>
-			<li role="presentation" class="trainer__item">
-				<a role="tab" href="#panel4" id="tab4" data-tabs-titles class="trainer__tab">Зал единоборств</a>
-			</li>
-			<li role="presentation" class="trainer__item">
-				<a role="tab" href="#panel5" id="tab5" data-tabs-titles class="trainer__tab">Массаж и SPA</a>
-			</li>
-		</ul>
-	</div>
-	<!-- Tab content semantics -->
-	<div class="tabpanel-container trainer__tabpanel">
-		<section role="tabpanel" id="panel1" aria-labelledby="tab1" tabindex="0" data-tabs-body class="tabpanel__body">
-			<div class="swiper trainerSwiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="swiper__item">
-							<div class="swiper__box-img">
-								<img class="swiper__img" src="img/trainer2.png" alt="trainer" />
-							</div>
-							<div class="swiper__box-content">
-								<p class="swiper__name">Имя Фамилия</p>
-								<p class="swiper__job">Должность</p>
-							</div>
-							<a class="swiper__btn btn" href="#" role="button">записаться к тренеру</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper__item">
-							<div class="swiper__box-img">
-								<img class="swiper__img" src="img/trainer1.png" alt="trainer" />
-							</div>
-							<div class="swiper__box-content">
-								<p class="swiper__name">Имя Фамилия</p>
-								<p class="swiper__job">Должность</p>
-							</div>
-							<a class="swiper__btn btn" href="#" role="button">записаться к тренеру</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper__item">
-							<div class="swiper__box-img">
-								<img class="swiper__img" src="img/trainer2.png" alt="trainer" />
-							</div>
-							<div class="swiper__box-content">
-								<p class="swiper__name">Имя Фамилия</p>
-								<p class="swiper__job">Должность</p>
-							</div>
-							<a class="swiper__btn btn" href="#" role="button">записаться к тренеру</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper__item">
-							<div class="swiper__box-img">
-								<img class="swiper__img" src="img/trainer3.png" alt="trainer" />
-							</div>
-							<div class="swiper__box-content">
-								<p class="swiper__name">Имя Фамилия</p>
-								<p class="swiper__job">Должность</p>
-							</div>
-							<a class="swiper__btn btn" href="#" role="button">записаться к тренеру</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper__item">
-							<div class="swiper__box-img">
-								<img class="swiper__img" src="img/trainer2.png" alt="trainer" />
-							</div>
-							<div class="swiper__box-content">
-								<p class="swiper__name">Имя Фамилия</p>
-								<p class="swiper__job">Должность</p>
-							</div>
-							<a class="swiper__btn btn" href="#" role="button">записаться к тренеру</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <section
-      role="tabpanel"
-      id="panel2"
-      aria-labelledby="tab2"
-      tabindex="0"
-      data-tabs-body
-    >
-      <div class="swiper trainerSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
+<!-- <section class="trainer">
+  <div class="container trainer__wrapper">
+    <h2 class="trainer__title title">Выбери своего тренера</h2> -->
+<!-- Tab semantics -->
+<!-- <div class="with-sidebar">
+      <ul id="tablist" role="tablist" class="tablist sidebar trainer__list">
+        <li role="presentation">
+          <a
+            class="tab with-sidebar trainer__tab"
+            role="tab"
+            href="#panel1"
+            id="tab1"
+            >Инструкторы водных программ
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            class="tab with-sidebar trainer__tab"
+            role="tab"
+            href="#panel2"
+            id="tab2"
+            >Инструкторы ТЗ
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            class="tab with-sidebar trainer__tab"
+            role="tab"
+            href="#panel3"
+            id="tab3"
+            >Инструкторы ГП
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            class="tab with-sidebar trainer__tab"
+            role="tab"
+            href="#panel4"
+            id="tab4"
+            >Зал единоборств
+          </a>
+        </li>
+        <li role="presentation">
+          <a
+            class="tab with-sidebar trainer__tab"
+            role="tab"
+            href="#panel5"
+            id="tab5"
+            >Массаж и SPA
+          </a>
+        </li>
+      </ul>
+      <div class="tabpanel-container content">
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          tabindex="0"
+          id="panel1"
+          aria-labelledby="tab1"
+        >
+          <div class="swiper trainerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer1.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer3.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer1.png"
-                  alt="trainer"
-                />
+        </section>
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          tabindex="0"
+          id="panel2"
+          aria-labelledby="tab2"
+        >
+          <div class="swiper trainerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer1.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer3.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
+        </section>
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          tabindex="0"
+          id="panel3"
+          aria-labelledby="tab3"
+        >
+          <div class="swiper trainerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer1.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer3.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer3.png"
-                  alt="trainer"
-                />
+        </section>
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          tabindex="0"
+          id="panel4"
+          aria-labelledby="tab4"
+        >
+          <div class="swiper trainerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer1.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer3.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
+        </section>
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          tabindex="0"
+          id="panel5"
+          aria-labelledby="tab5"
+        >
+          <div class="swiper trainerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer1.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer3.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__item">
+                  <div class="swiper__box-img">
+                    <img
+                      class="swiper__img"
+                      src="img/trainer2.png"
+                      alt="trainer"
+                    />
+                  </div>
+                  <div class="swiper__box-content">
+                    <p class="swiper__name">Имя Фамилия</p>
+                    <p class="swiper__job">Должность</p>
+                  </div>
+                  <a class="swiper__btn btn" href="#" role="button"
+                    >записаться к тренеру</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
-    <section
-      role="tabpanel"
-      id="panel3"
-      aria-labelledby="tab3"
-      tabindex="0"
-      data-tabs-body
-    >
-      <div class="swiper trainerSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer1.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer3.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      role="tabpanel"
-      id="panel4"
-      aria-labelledby="tab4"
-      tabindex="0"
-      data-tabs-body
-    >
-      <div class="swiper trainerSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer1.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer3.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      role="tabpanel"
-      id="panel5"
-      aria-labelledby="tab5"
-      tabindex="0"
-      data-tabs-body
-    >
-      <div class="swiper trainerSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer1.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer3.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper__item">
-              <div class="swiper__box-img">
-                <img
-                  class="swiper__img"
-                  src="img/trainer2.png"
-                  alt="trainer"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-	</div>
-</section>
+    </div> -->
+
+<!-- </div>
+</section> -->
