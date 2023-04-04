@@ -1,36 +1,16 @@
-<!-- <section class="spa">
+<section class="spa">
   <div class="spa__wrapper">
     <h2 class="spa__title title">SPA</h2>
     <div class="spa__content">
       <div class="spa__box-img">
         <img
-          src="@img/spa.png"
+          src="@img/spa-with-flowers.png"
           alt="spa"
           class="spa__img"
-          width="740px"
+          width="781px"
           height="726px"
         />
-        <img
-          src="@img/Flower1.png"
-          alt="spa"
-          class="spa__img"
-          width="364px"
-          height="284px"
-        />
-        <img
-          src="@img/Flower2.png"
-          alt="spa"
-          class="spa__img"
-          width="324px"
-          height="293px"
-        />
-        <img
-          src="@img/Flower3.png"
-          alt="spa"
-          class="spa__img"
-          width="411px"
-          height="409px"
-        />
+      
       </div>
       <ul class="spa__list">
         <li class="spa__item">
@@ -80,9 +60,23 @@
             <p class="swiper__name">Имя Фамилия</p>
             <p class="swiper__job">Должность</p>
           </div>
-          <a class="swiper__btn btn" href="#" role="button"
-            >записаться к тренеру</a
-          >
+          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
+          >записаться к тренеру</a
+        >
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper__item">
+          <div class="swiper__box-img">
+            <img class="swiper__img" src="@img/trainer1.png" alt="trainer" />
+          </div>
+          <div class="swiper__box-content">
+            <p class="swiper__name">Имя Фамилия</p>
+            <p class="swiper__job">Должность</p>
+          </div>
+          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
+          >записаться к тренеру</a
+        >
         </div>
       </div>
       <div class="swiper-slide">
@@ -94,35 +88,31 @@
             <p class="swiper__name">Имя Фамилия</p>
             <p class="swiper__job">Должность</p>
           </div>
-          <a class="swiper__btn btn" href="#" role="button"
-            >записаться к тренеру</a
-          >
+          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
+          >записаться к тренеру</a
+        >
+         
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper__item">
-          <div class="swiper__box-img">
-            <img class="swiper__img" src="@img/trainer3.png" alt="trainer" />
-          </div>
-          <div class="swiper__box-content">
-            <p class="swiper__name">Имя Фамилия</p>
-            <p class="swiper__job">Должность</p>
-          </div>
-          <a class="swiper__btn btn" href="#" role="button"
-            >записаться к тренеру</a
-          >
-        </div>
-      </div>
-      <div class="spa__buttons">
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
-    
   </div>
-  
+  <div class="spa__buttons">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
   <div class="spa__ellipse1"></div>
   <div class="spa__ellipse2"></div>
   <div class="spa__ellipse3"></div>
   <div class="spa__ellipse4"></div>
-</section> -->
+</section>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".spaSwiper", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

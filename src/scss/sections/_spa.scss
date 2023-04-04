@@ -1,6 +1,8 @@
 .spa {
   position: relative;
   padding: 105px 0 110px;
+  max-width: 1700px;
+  margin: 0 auto;
   // .spa__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
@@ -21,49 +23,11 @@
   // .spa__box-img
   &__box-img {
     position: relative;
-    picture:nth-child(1) {
-      z-index: 1;
-      position: relative;
-
-    }
-    picture:nth-child(2) {
-      position: absolute;
-      left: 16%;
-      top: 14%;
-    }
-    picture:nth-child(3) {
-      position: absolute;
-      left: 2%;
-      top: 30%;
-    }
-    picture:nth-child(4) {
-      position: absolute;
-      left: 23%;
-      top: 30%;
-    }
+   
   }
   // .spa__img
   &__img {
-    &:nth-child(1) {
-      z-index: 1;
-      position: relative;
-    }
-    &:nth-child(2) {
-      position: absolute;
-      left: 16%;
-      top: 14%;
-    }
-    &:nth-child(3) {
-      position: absolute;
-      left: 2%;
-      top: 30%;
-    }
-    &:nth-child(4) {
-      position: absolute;
-      left: 23%;
-      top: 30%;
-    }
-    
+   
   }
   // .spa__list
   &__list {
@@ -124,8 +88,8 @@
   // .spa__buttons
   &__buttons {
     position: absolute;
-    bottom: -10%;
-    left: 5%;
+    bottom: 5%;
+    right: 9%;
     transform: translateX(-50%) rotate(7deg);
     z-index: 2;
     width: 174px;
@@ -137,14 +101,13 @@
     @include wh(545px);
     border-radius: 50%;
 
-position: absolute;
+    position: absolute;
 
-right: -15%;
-top: 15%;
+    right: -15%;
+    top: 15%;
 
-background-color: rgba(234, 0, 70, 0.7);
-filter: blur(150px);
-
+    background-color: rgba(234, 0, 70, 0.7);
+    filter: blur(150px);
   }
   // .spa__ellipse2
   &__ellipse2 {
@@ -152,46 +115,41 @@ filter: blur(150px);
     @include wh(557px);
     border-radius: 50%;
 
-position: absolute;
+    position: absolute;
 
-left: -6%;
-top: 15%;
+    left: -6%;
+    top: 15%;
 
-background-color: rgba(234, 0, 70, 0.7);
-filter: blur(150px);
-
+    background-color: rgba(234, 0, 70, 0.7);
+    filter: blur(150px);
   }
   // .spa__ellipse3
   &__ellipse3 {
     z-index: -1;
     @include wh(419px);
     border-radius: 50%;
-    
-position: absolute;
 
-left: 35%;
-top: 30%;
+    position: absolute;
 
-background-color: rgba(232, 186, 24, 0.7);
-filter: blur(150px);
+    left: 35%;
+    top: 30%;
 
+    background-color: rgba(232, 186, 24, 0.7);
+    filter: blur(150px);
   }
   // .spa__ellipse4
   &__ellipse4 {
     z-index: -1;
     @include wh(518px);
     border-radius: 50%;
-    
-position: absolute;
 
-right: 2%;
-bottom: 20%;
+    position: absolute;
 
+    right: 2%;
+    bottom: 20%;
 
-background-color: #FFF;
-filter: blur(150px);
-
-
+    background-color: #fff;
+    filter: blur(150px);
   }
   .swiper {
     overflow: visible;
@@ -203,16 +161,17 @@ filter: blur(150px);
       justify-content: center;
       transform: translate3d(0px, 0px, 0px) !important;
     }
+    .swiper-slide-prev{
+      display: none;
+    }
     // .swiper__item
     &__item {
       @include flex(space-between, $flex-direction: column);
       padding: 20px 30px 16px;
 
       background-color: #fff;
-      
 
-      
-    max-width: 390px;
+      max-width: 390px;
     }
     // .swiper__box-img
     &__box-img {
@@ -229,8 +188,7 @@ filter: blur(150px);
       @include flex(space-between, $flex-direction: column);
       gap: 10px;
 
-    
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     }
     // .swiper__name
     &__name {

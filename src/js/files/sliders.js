@@ -71,96 +71,17 @@ function initSliders() {
       },
     });
   }
-  if (document.querySelector(".gallerySwiper")) {
-    const gallerySwiper = new Swiper('.gallerySwiper', {
-
-      
-      navigation: {
-        nextEl: '.gallerySwiper .swiper-button-next',
-        prevEl: '.gallerySwiper .swiper-button-prev',
-      },
-    });
-  }
-  
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {
-      modules: [Navigation],
+     
       navigation: {
-        nextEl: ".spaSwiper .swiper-button-next",
-        prevEl: ".spaSwiper .swiper-button-prev",
-      },
-      slidesPerView: 1,
-    });
-  }
-  if (document.querySelector(".cardsSwiper")) {
-    new Swiper(".cardsSwiper", {
-      modules: [Navigation],
-      navigation: {
-        nextEl: ".cardsSwiper .swiper-button-next",
-        prevEl: ".cardsSwiper .swiper-button-prev",
-      },
-
-      slidesPerView: "3",
-      spaceBetween: 40,
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is >= 1279 px
-        1279: {
-          // 		// slidesPerView: 2,
-          spaceBetween: 40,
-        },
-
-        // 	// when window width is >= 1024px
-        // 	768: {
-        // 		// slidesPerView: 3,
-        // 		spaceBetween: 30
-        // 	},
-        // 	// when window width is >= 1280px
-        // 	1280: {
-        // 		// slidesPerView: 4,
-        // 		spaceBetween: 40
-        // 	}
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   }
 }
-const swiper1 = new Swiper('.swiper-container1', {
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-container1 .swiper-button-next',
-    prevEl: '.swiper-container1 .swiper-button-prev',
-  },
-});
 
-const swiper2 = new Swiper('.swiper-container2', {
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-container2 .swiper-button-next',
-    prevEl: '.swiper-container2 .swiper-button-prev',
-  },
-});
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
   // Добавление классов слайдера
@@ -201,7 +122,3 @@ window.addEventListener("load", function (e) {
   // Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
   //initSlidersScroll();
 });
-
-
-
-
