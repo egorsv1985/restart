@@ -325,6 +325,11 @@ picture {
 .text--right {
   text-align: right;
 }
+@media only screen and (max-width: 899px) {
+  .text--right {
+    text-align: center;
+  }
+}
 
 body::after {
   content: "";
@@ -1154,6 +1159,8 @@ body {
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .contacts__title {
   margin-bottom: 40px;
@@ -1229,18 +1236,20 @@ body {
   margin-bottom: 50px;
 }
 .contacts__btn {
+  --btn-font-size: clamp(25px, 1.49vw + 19.63px, 45px);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 19px;
+  padding: 15px 20px;
   max-width: 656px;
   height: 78px;
+  width: 100%;
   background: linear-gradient(90deg, #c49c6b 39.11%, #f8d3a6 128.36%);
   border-radius: 33px 0px;
   font-family: "ProximaNova-Extrabld";
   font-weight: 800;
-  font-size: 45px;
-  line-height: 45px;
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-font-size);
 }
 .contacts__map {
   border-radius: 15px;
@@ -1649,10 +1658,11 @@ body {
   text-align: center;
 }
 .spa__text--big {
+  --spa-text: clamp(25px, 1.49vw + 19.63px, 45px);
   font-family: "micra-bold";
   font-weight: 700;
-  font-size: 45px;
-  line-height: 46px;
+  font-size: var(--spa-text);
+  line-height: var(--spa-text);
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
@@ -1667,6 +1677,13 @@ body {
   z-index: 2;
   width: 174px;
   height: 80px;
+}
+@media only screen and (max-width: 899px) {
+  .spa__buttons {
+    bottom: 1%;
+    right: 26%;
+    transform: translateX(-50%) rotate(0deg);
+  }
 }
 .spa__ellipse1 {
   z-index: -1;
@@ -2066,10 +2083,23 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 899px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+}
 .footer__box {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+@media only screen and (max-width: 899px) {
+  .footer__box {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 .footer__text {
   font-family: "Mulish-Regular";
@@ -2077,6 +2107,11 @@ body {
   font-size: 20px;
   line-height: 113%;
   letter-spacing: 0.04em;
+}
+@media only screen and (max-width: 899px) {
+  .footer__text {
+    text-align: center;
+  }
 }
 .nav__list {
   display: flex;
