@@ -29,18 +29,30 @@
     &:nth-child(1) {
       right: 20%;
       top: -18%;
+      @include media (max, md) {
+        display: none;
+       }
     }
     &:nth-child(2) {
       left: 15%;
       bottom: 20%;
+      @include media (max, 1250px) {
+        display: none;
+      }
     }
     &:nth-child(3) {
       right: 10%;
       bottom: 27%;
+      @include media (max, 1100px) {
+        display: none;
+      }
     }
     &:nth-child(4) {
       top: -5%;
       left: 4%;
+      @include media (max, 1250px) {
+        display: none;
+      }
     }
     img {
       border-radius: 50%;
@@ -67,6 +79,18 @@
       left: 23%;
       top: 0%;
       z-index: -1;
+      @include media (max, xl) {
+        left: 20%;
+      }  
+      @include media (max, 1200px) {
+        left: 16%;
+      }
+      @include media (max, 1100px) {
+        left: 10%;
+      }
+      @include media (max, lg) {
+       display: none;
+      }
     }
   }
   // .kids__img
@@ -78,34 +102,58 @@
     &:nth-child(7) {
       top: 26%;
       right: 24%;
+      @include media (max, 1150px) {
+        display: none;
+      }
     }
     &:nth-child(8) {
       left: 43%;
       top: -10%;
+      @include media (max, 1250px) {
+        display: none;
+      }
     }
     &:nth-child(9) {
       right: 9%;
       bottom: -2%;
+      @include media (max, 1250px) {
+        display: none;
+      }
     }
     &:nth-child(10) {
       top: 43%;
       left: 5%;
+      @include media (max, lg) {
+        display: none;
+       }
     }
     &:nth-child(11) {
       bottom: 3%;
       left: 4%;
+      @include media (max, 1100px) {
+        display: none;
+      }
     }
     &:nth-child(12) {
       top: 20%;
       left: 43%;
+      @include media (max, 1100px) {
+        display: none;
+      }
     }
     &:nth-child(13) {
       top: 7%;
       right: 11%;
+      @include media (max, lg) {
+        display: none;
+       }
     }
     &:nth-child(14) {
       top: -9%;
       left: 35%;
+      @include media (max, lg) {
+        display: none;
+       }
     }
   }
   // .kids__ellipse1
