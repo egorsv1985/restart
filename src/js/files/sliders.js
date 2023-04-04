@@ -49,8 +49,8 @@ function initSliders() {
   // Перечень слайдеров
   if (document.querySelector(".trainerSwiper")) {
     new Swiper(".trainerSwiper", {
-      slidesPerView: 5,
-      spaceBetween: 10,
+      slidesPerView: 3.5,
+      spaceBetween: 40,
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 1279 px

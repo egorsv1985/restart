@@ -79,8 +79,6 @@
     color: $textMainColor;
   }
 
- 
-
   .tab:focus-visible {
     background-color: royalblue;
     color: whitesmoke;
@@ -118,20 +116,14 @@
   .tab[aria-selected="true"] {
     background-color: var(--component-bg);
   }
-
-
-  .tabpanel:not(:target):not(.visible) {
+.content{
+  margin-top: 105px;
+}
+  .tabpanel {
     display: none;
   }
- 
-  .tabpanel:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  .tabpanel > * {
-    flex: 1 1 20rem;
-  }
-  .tabpanel:not(:target):not(.visible) {
-    display: none;
+  .tabpanel.active{
+    display: block;
   }
   .swiper {
     overflow: visible;
@@ -140,13 +132,9 @@
     }
     // .swiper__item
     &__item {
+     
     }
-    @include flex(space-between, $flex-direction: column);
-    padding: 20px 30px 16px;
 
-    background-color: #fff;
-
-   
     // .swiper__box-img
     &__box-img {
       max-width: 375px;
@@ -207,6 +195,11 @@
   }
   .swiper-slide {
     max-width: 390px;
+    @include flex(space-between, $flex-direction: column);
+    padding: 20px 30px 16px;
+
+    background-color: #fff;
+    max-width: 375px;
 
     transform: rotate(-7deg);
     &:nth-child(2n) {
