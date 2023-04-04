@@ -3,7 +3,8 @@
   padding: 120px 0 50px;
   // .contacts__wrapper
   &__wrapper {
-    @include flex(space-between);
+    @include flex(space-between, $flex-wrap:wrap);
+    gap: 20px;
   }
   // .contacts__title
   &__title {
@@ -89,18 +90,19 @@
   }
   // .contacts__btn
   &__btn {
+    --btn-font-size: clamp(25px, 1.49vw + 19.63px, 45px);
     @include flex(center, center);
-    padding: 15px 19px;
+    padding: 15px 20px;
     max-width: 656px;
     height: 78px;
-
+width: 100%;
     background: linear-gradient(90deg, #c49c6b 39.11%, #f8d3a6 128.36%);
     border-radius: 33px 0px;
     font-family: "ProximaNova-Extrabld";
 
     font-weight: 800;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: var(--btn-font-size);
+    line-height: var(--btn-font-size);
   }
   // .contacts__map
   &__map {

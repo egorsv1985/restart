@@ -73,10 +73,11 @@
     line-height: 24px;
     text-align: center;
     &--big {
+      --spa-text: clamp(25px, 1.49vw + 19.63px, 45px);
       font-family: "micra-bold";
       font-weight: 700;
-      font-size: 45px;
-      line-height: 46px;
+      font-size: var(--spa-text);
+      line-height: var(--spa-text);
       text-align: center;
       text-transform: uppercase;
       margin-top: 50px;
@@ -94,6 +95,11 @@
     z-index: 2;
     width: 174px;
     height: 80px;
+    @include media (max, lg) {
+      bottom: 1%;
+    right: 26%;
+    transform: translateX(-50%) rotate(0deg);
+    }
   }
   // .spa__ellipse1
   &__ellipse1 {
