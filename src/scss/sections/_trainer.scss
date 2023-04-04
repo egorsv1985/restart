@@ -1,3 +1,51 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+
+    &:checked + label {
+      font-weight: bold;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: #000;
+        margin-top: 5px;
+      }
+    }
+
+    &:checked ~ .tab-content {
+      display: block;
+    }
+  }
+
+  label {
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .tab-content {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    margin-top: -1px;
+    border: 1px solid #000;
+  }
+}
+
 .trainer {
   position: relative;
   padding: 50px 0 65px;
@@ -8,17 +56,14 @@
   }
   // .trainer__title
   &__title {
-    &::after {
-      left: -10%;
-    }
   }
   // .trainer__list
   &__list {
     @include flex(space-between, center, wrap);
     gap: 22px;
   }
-  // .trainer__item
-  &__item {
+  // .trainer__tab
+  &__tab {
     padding: 20px 45px;
     @include flex(center, center);
 
@@ -33,19 +78,60 @@
 
     color: $textMainColor;
   }
-  // .trainer__tab
-  &__tab {
+
+ 
+
+  .tab:focus-visible {
+    background-color: royalblue;
+    color: whitesmoke;
+    outline: 0.2em solid transparent;
   }
-  // .trainer__tabpanel
-  &__tabpanel {
-    margin-top: 115px;
+
+  .tab[aria-selected="true"] {
   }
-  .tabpanel {
-    // .tabpanel__body
-    &__body {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
     }
   }
-  .tabpanel-container {
+  .tab {
+    button {
+      background-color: #f1f1f1;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      &:hover {
+        background-color: #ddd;
+      }
+      &.active {
+        background-color: #ccc;
+      }
+    }
+  }
+  .tab[aria-selected="true"] {
+    background-color: var(--component-bg);
+  }
+
+
+  .tabpanel:not(:target):not(.visible) {
+    display: none;
+  }
+ 
+  .tabpanel:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .tabpanel > * {
+    flex: 1 1 20rem;
+  }
+  .tabpanel:not(:target):not(.visible) {
+    display: none;
   }
   .swiper {
     overflow: visible;
@@ -54,20 +140,18 @@
     }
     // .swiper__item
     &__item {
-      @include flex(space-between, $flex-direction: column);
-      padding: 20px 30px 16px;
-
-      background-color: #fff;
-      
-
-      
-    max-width: 375px;
     }
+    @include flex(space-between, $flex-direction: column);
+    padding: 20px 30px 16px;
+
+    background-color: #fff;
+
+   
     // .swiper__box-img
     &__box-img {
       max-width: 375px;
-    align-self: center;
-    margin-bottom: 25px;
+      align-self: center;
+      margin-bottom: 25px;
     }
     // .swiper__img
     &__img {
@@ -78,8 +162,7 @@
       @include flex(space-between, $flex-direction: column);
       gap: 10px;
 
-    
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     }
     // .swiper__name
     &__name {
@@ -116,8 +199,6 @@
       text-transform: uppercase;
 
       color: $textMainColor;
-
-      
     }
   }
   .trainerSwiper {
@@ -128,93 +209,15 @@
     max-width: 390px;
 
     transform: rotate(-7deg);
-  &:nth-child(2n) {
-    transform: rotate(7deg);
-    position: relative;
-    z-index: 1;
-    .swiper__img {
-      transform: rotate(-7deg);
+    &:nth-child(2n) {
+      transform: rotate(7deg);
+      position: relative;
+      z-index: 1;
+      .swiper__img {
+        transform: rotate(-7deg);
+      }
     }
   }
+  .btn {
   }
-}
-
-.swiper {
-  // .swiper__item
-  &__item {
-  }
-  // .swiper__box-img
-  &__box-img {
-  }
-  // .swiper__img
-  &__img {
-  }
-}
-.trainerSwiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.trainer {
-  // .trainer__wrapper
-  &__wrapper {
-  }
-  // .trainer__title
-  &__title {
-  }
-  // .trainer__list
-  &__list {
-  }
-  // .trainer__item
-  &__item {
-  }
-  // .trainer__tab
-  &__tab {
-  }
-  // .trainer__tabpanel
-  &__tabpanel {
-  }
-}
-.container {
-}
-.title {
-}
-.tabpanel-container {
-}
-.tabpanel {
-  // .tabpanel__body
-  &__body {
-  }
-}
-.swiper {
-  // .swiper__item
-  &__item {
-  }
-  // .swiper__box-img
-  &__box-img {
-  }
-  // .swiper__img
-  &__img {
-  }
-  // .swiper__box-content
-  &__box-content {
-  }
-  // .swiper__name
-  &__name {
-  }
-  // .swiper__job
-  &__job {
-  }
-  // .swiper__btn
-  &__btn {
-  }
-}
-.trainerSwiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.btn {
 }
