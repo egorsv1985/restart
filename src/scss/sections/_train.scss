@@ -1,6 +1,6 @@
 .train {
   position: relative;
-  padding: 140px 0 50px;
+  padding: 100px 0 50px;
   // .train__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);
