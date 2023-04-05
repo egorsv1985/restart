@@ -1,51 +1,3 @@
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-
-    &:checked + label {
-      font-weight: bold;
-
-      &::after {
-        content: "";
-        display: block;
-        height: 2px;
-        background-color: #000;
-        margin-top: 5px;
-      }
-    }
-
-    &:checked ~ .tab-content {
-      display: block;
-    }
-  }
-
-  label {
-    display: block;
-    padding: 10px;
-    margin: 0 10px;
-    border: 1px solid #000;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      background-color: #f5f5f5;
-    }
-  }
-
-  .tab-content {
-    display: none;
-    width: 100%;
-    padding: 20px;
-    margin-top: -1px;
-    border: 1px solid #000;
-  }
-}
-
 .trainer {
   position: relative;
   padding: 50px 0 65px;
@@ -116,23 +68,23 @@
   .tab[aria-selected="true"] {
     background-color: var(--component-bg);
   }
-.content{
-  margin-top: 105px;
-}
+  .content {
+    margin-top: 105px;
+  }
   .tabpanel {
     display: none;
   }
-  .tabpanel.active{
+  .tabpanel.active {
     display: block;
   }
   .swiper {
-    overflow: visible;
+    // overflow: visible;
     .swiper-wrapper {
-      justify-content: center;
+      // justify-content: center;
+     
     }
     // .swiper__item
     &__item {
-     
     }
 
     // .swiper__box-img
@@ -143,7 +95,6 @@
     }
     // .swiper__img
     &__img {
-      transform: rotate(7deg);
     }
     // .swiper__box-content
     &__box-content {
@@ -192,6 +143,7 @@
   .trainerSwiper {
   }
   .swiper-wrapper {
+    padding: 35px 0;
   }
   .swiper-slide {
     max-width: 390px;
@@ -200,14 +152,13 @@
 
     background-color: #fff;
     max-width: 375px;
+    transform: rotate(7deg);
 
-    transform: rotate(-7deg);
     &:nth-child(2n) {
-      transform: rotate(7deg);
       position: relative;
       z-index: 1;
+      transform: rotate(-7deg);
       .swiper__img {
-        transform: rotate(-7deg);
       }
     }
   }

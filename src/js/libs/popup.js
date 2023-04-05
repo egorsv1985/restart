@@ -9,8 +9,7 @@
 // Подключение функционала "Чертогов Фрилансера"
 import {
 	isMobile,
-	bodyLockStatus,
-	bodyLockToggle,
+	
 	FLS
 } from "../files/functions.js";
 import {
@@ -222,8 +221,8 @@ class Popup {
 			this.targetOpen.element.classList.add(this.options.classes.popupActive);
 			document.body.classList.add(this.options.classes.bodyActive);
 
-			if (!this._reopen) bodyLockToggle();
-			else this._reopen = false;
+			
+			
 
 			this.targetOpen.element.setAttribute('aria-hidden', 'false');
 
@@ -256,9 +255,7 @@ class Popup {
 		if (selectorValue && typeof (selectorValue) === "string" && selectorValue.trim() !== "") {
 			this.previousOpen.selector = selectorValue;
 		}
-		if (!this.isOpen || !bodyLockStatus) {
-			return;
-		}
+		
 		// До закрытия
 		this.options.on.beforeClose(this);
 		// YouTube
@@ -271,7 +268,7 @@ class Popup {
 		this.previousOpen.element.setAttribute('aria-hidden', 'true');
 		if (!this._reopen) {
 			document.body.classList.remove(this.options.classes.bodyActive);
-			bodyLockToggle();
+			
 			this.isOpen = false;
 		}
 		// Очищение адресной строки

@@ -39,14 +39,14 @@ flsFunctions.menuInit();
 Документация:
 Сниппет (HTML): spollers
 */
-flsFunctions.spollers();
+// flsFunctions.spollers();
 
 /*
 Модуль работы с табами
 Документация:
 Сниппет (HTML): tabs
 */
-flsFunctions.tabs();
+// flsFunctions.tabs();
 
 /*
 Модуль "показать еще"

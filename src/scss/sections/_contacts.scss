@@ -92,7 +92,7 @@
   &__btn {
     --btn-font-size: clamp(25px, 1.49vw + 19.63px, 45px);
     @include flex(center, center);
-    padding: 15px 20px;
+    padding: 15px 18px;
     max-width: 656px;
     height: 78px;
 width: 100%;

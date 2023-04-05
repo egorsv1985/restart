@@ -46,31 +46,7 @@ function initSliders() {
   // при необходимости отключить
   bildSliders();
 
-  // Перечень слайдеров
-  if (document.querySelector(".trainerSwiper")) {
-    new Swiper(".trainerSwiper", {
-      slidesPerView: 3.5,
-      spaceBetween: 40,
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is >= 1279 px
-        // 1279: {
-        //   // 		// slidesPerView: 2,
-        //   spaceBetween: 40,
-        // },
-        // 	// when window width is >= 1024px
-        // 	768: {
-        // 		// slidesPerView: 3,
-        // 		spaceBetween: 30
-        // 	},
-        // 	// when window width is >= 1280px
-        // 	1280: {
-        // 		// slidesPerView: 4,
-        // 		spaceBetween: 40
-        // 	}
-      },
-    });
-  }
+
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {
      
