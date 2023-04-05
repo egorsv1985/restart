@@ -13,6 +13,9 @@
   &__list {
     @include flex(space-between, center, wrap);
     gap: 22px;
+    @include media (max, 1250px) {
+      justify-content: start;
+    }
   }
   // .trainer__tab
   &__tab {
@@ -143,15 +146,15 @@
   .trainerSwiper {
   }
   .swiper-wrapper {
-    padding: 35px 0;
+    padding: 35px 0 15px;
   }
   .swiper-slide {
-    max-width: 390px;
+    max-width: 100%;
     @include flex(space-between, $flex-direction: column);
     padding: 20px 30px 16px;
 
     background-color: #fff;
-    max-width: 375px;
+    width: 375px !important;
     transform: rotate(7deg);
 
     &:nth-child(2n) {

@@ -49,7 +49,8 @@ function initSliders() {
 
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {
-     
+     spaceBetween: 40,
+     slidesPerView: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

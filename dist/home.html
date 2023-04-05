@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230405131136">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230405150117">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -262,7 +262,7 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230405131136"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230405150117"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
@@ -776,7 +776,7 @@
 						</div>
 
 						<div class="kids__img-box">
-							<picture><source srcset="img/kids2.webp" type="image/webp"><img src="img/kids2.png" alt="" class="kids__img" width="624px" height="688px" /></picture>
+							<picture><source srcset="img/kids2.webp" type="image/webp"><img src="img/kids2.png" alt="" class="kids__img" /></picture>
 						</div>
 						<div class="kids__img-box kids__img-box--absolute">
 							<picture><source srcset="img/kids3.webp" type="image/webp"><img src="img/kids3.png" alt="" class="kids__img" width="717px" height="688px" /></picture>
@@ -800,41 +800,43 @@
 				<div class="spa__wrapper">
 					<h2 class="spa__title title">SPA</h2>
 					<div class="spa__content">
-						<div class="spa__box-img">
-							<picture><source srcset="img/spa-with-flowers.webp" type="image/webp"><img src="img/spa-with-flowers.png" alt="spa" class="spa__img" width="781px" height="726px" /></picture>
-
+						<div class="spa__wrap">
+							<div class="spa__box-img">
+								<picture><source srcset="img/spa-with-flowers.webp" type="image/webp"><img src="img/spa-with-flowers.png" alt="spa" class="spa__img" /></picture>
+							</div>
+							<ul class="spa__list">
+								<li class="spa__item">
+									<h3 class="spa__subtitle subtitle">SPA ПРОЦЕДУРЫ</h3>
+									<p class="spa__text text">
+										Комплекс программ, направленных на улучшение здоровья, внешнего
+										вида с помощью водных процедур, гидромассажа, также косметических
+										процедур.
+									</p>
+								</li>
+								<li class="spa__item">
+									<h3 class="spa__subtitle subtitle">банный комплекс</h3>
+									<p class="spa__text text">
+										Банный комплекс в ReСтарт включает: фитобочку, душ шарк, русскую
+										парную, мини бассейн с джакузи
+									</p>
+								</li>
+								<li class="spa__item">
+									<h3 class="spa__subtitle subtitle">LPG МаССАЖ</h3>
+									<p class="spa__text text">
+										Массаж может использоваться как для лечения целлюлита и похудения,
+										так и для борьбы с морщинами.
+									</p>
+								</li>
+								<li class="spa__item">
+									<h3 class="spa__subtitle subtitle">СОЛЯРИЙ</h3>
+									<p class="spa__text text">
+										Наш клуб предлагает Вам вертикальный солярий, который подарит
+										ухоженное тело и приятный цвет кожи
+									</p>
+								</li>
+							</ul>
 						</div>
-						<ul class="spa__list">
-							<li class="spa__item">
-								<h3 class="spa__subtitle subtitle">SPA ПРОЦЕДУРЫ</h3>
-								<p class="spa__text text">
-									Комплекс программ, направленных на улучшение здоровья, внешнего вида
-									с помощью водных процедур, гидромассажа, также косметических
-									процедур.
-								</p>
-							</li>
-							<li class="spa__item">
-								<h3 class="spa__subtitle subtitle">банный комплекс</h3>
-								<p class="spa__text text">
-									Банный комплекс в ReСтарт включает: фитобочку, душ шарк, русскую
-									парную, мини бассейн с джакузи
-								</p>
-							</li>
-							<li class="spa__item">
-								<h3 class="spa__subtitle subtitle">LPG МаССАЖ</h3>
-								<p class="spa__text text">
-									Массаж может использоваться как для лечения целлюлита и похудения,
-									так и для борьбы с морщинами.
-								</p>
-							</li>
-							<li class="spa__item">
-								<h3 class="spa__subtitle subtitle">СОЛЯРИЙ</h3>
-								<p class="spa__text text">
-									Наш клуб предлагает Вам вертикальный солярий, который подарит
-									ухоженное тело и приятный цвет кожи
-								</p>
-							</li>
-						</ul>
+
 						<p class="spa__text spa__text--big">
 							еще сомневаешься?<br />
 							запишись на гостевой визит
@@ -877,7 +879,6 @@
 									<p class="swiper__job">Должность</p>
 								</div>
 								<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-
 							</div>
 						</div>
 					</div>
@@ -896,6 +897,7 @@
 			<script>
 				var swiper = new Swiper(".spaSwiper", {
 					slidesPerView: 1,
+					spaceBetween: 30,
 					navigation: {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
@@ -989,7 +991,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230405131136"></script>
+	<script src="js/app.min.js?_v=20230405150117"></script>
 
 </body>
 

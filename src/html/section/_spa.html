@@ -2,47 +2,43 @@
   <div class="spa__wrapper">
     <h2 class="spa__title title">SPA</h2>
     <div class="spa__content">
-      <div class="spa__box-img">
-        <img
-          src="@img/spa-with-flowers.png"
-          alt="spa"
-          class="spa__img"
-          width="781px"
-          height="726px"
-        />
-      
+      <div class="spa__wrap">
+        <div class="spa__box-img">
+          <img src="@img/spa-with-flowers.png" alt="spa" class="spa__img" />
+        </div>
+        <ul class="spa__list">
+          <li class="spa__item">
+            <h3 class="spa__subtitle subtitle">SPA ПРОЦЕДУРЫ</h3>
+            <p class="spa__text text">
+              Комплекс программ, направленных на улучшение здоровья, внешнего
+              вида с помощью водных процедур, гидромассажа, также косметических
+              процедур.
+            </p>
+          </li>
+          <li class="spa__item">
+            <h3 class="spa__subtitle subtitle">банный комплекс</h3>
+            <p class="spa__text text">
+              Банный комплекс в ReСтарт включает: фитобочку, душ шарк, русскую
+              парную, мини бассейн с джакузи
+            </p>
+          </li>
+          <li class="spa__item">
+            <h3 class="spa__subtitle subtitle">LPG МаССАЖ</h3>
+            <p class="spa__text text">
+              Массаж может использоваться как для лечения целлюлита и похудения,
+              так и для борьбы с морщинами.
+            </p>
+          </li>
+          <li class="spa__item">
+            <h3 class="spa__subtitle subtitle">СОЛЯРИЙ</h3>
+            <p class="spa__text text">
+              Наш клуб предлагает Вам вертикальный солярий, который подарит
+              ухоженное тело и приятный цвет кожи
+            </p>
+          </li>
+        </ul>
       </div>
-      <ul class="spa__list">
-        <li class="spa__item">
-          <h3 class="spa__subtitle subtitle">SPA ПРОЦЕДУРЫ</h3>
-          <p class="spa__text text">
-            Комплекс программ, направленных на улучшение здоровья, внешнего вида
-            с помощью водных процедур, гидромассажа, также косметических
-            процедур.
-          </p>
-        </li>
-        <li class="spa__item">
-          <h3 class="spa__subtitle subtitle">банный комплекс</h3>
-          <p class="spa__text text">
-            Банный комплекс в ReСтарт включает: фитобочку, душ шарк, русскую
-            парную, мини бассейн с джакузи
-          </p>
-        </li>
-        <li class="spa__item">
-          <h3 class="spa__subtitle subtitle">LPG МаССАЖ</h3>
-          <p class="spa__text text">
-            Массаж может использоваться как для лечения целлюлита и похудения,
-            так и для борьбы с морщинами.
-          </p>
-        </li>
-        <li class="spa__item">
-          <h3 class="spa__subtitle subtitle">СОЛЯРИЙ</h3>
-          <p class="spa__text text">
-            Наш клуб предлагает Вам вертикальный солярий, который подарит
-            ухоженное тело и приятный цвет кожи
-          </p>
-        </li>
-      </ul>
+
       <p class="spa__text spa__text--big">
         еще сомневаешься?<br />
         запишись на гостевой визит
@@ -60,9 +56,13 @@
             <p class="swiper__name">Имя Фамилия</p>
             <p class="swiper__job">Должность</p>
           </div>
-          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
-          >записаться к тренеру</a
-        >
+          <a
+            data-popup="#callback"
+            href="#callback"
+            role="button"
+            class="swiper__btn btn"
+            >записаться к тренеру</a
+          >
         </div>
       </div>
       <div class="swiper-slide">
@@ -74,9 +74,13 @@
             <p class="swiper__name">Имя Фамилия</p>
             <p class="swiper__job">Должность</p>
           </div>
-          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
-          >записаться к тренеру</a
-        >
+          <a
+            data-popup="#callback"
+            href="#callback"
+            role="button"
+            class="swiper__btn btn"
+            >записаться к тренеру</a
+          >
         </div>
       </div>
       <div class="swiper-slide">
@@ -88,10 +92,13 @@
             <p class="swiper__name">Имя Фамилия</p>
             <p class="swiper__job">Должность</p>
           </div>
-          <a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn"
-          >записаться к тренеру</a
-        >
-         
+          <a
+            data-popup="#callback"
+            href="#callback"
+            role="button"
+            class="swiper__btn btn"
+            >записаться к тренеру</a
+          >
         </div>
       </div>
     </div>
@@ -110,6 +117,7 @@
 <script>
   var swiper = new Swiper(".spaSwiper", {
     slidesPerView: 1,
+    spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

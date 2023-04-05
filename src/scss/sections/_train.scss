@@ -3,7 +3,7 @@
   padding: 100px 0 50px;
   // .train__wrapper
   &__wrapper {
-    @include flex(space-between, center, $flex-direction: column);
+    @include flex(space-between, $flex-direction: column);
     gap: 100px;
     max-width: 1700px;
     margin: 0 auto;
@@ -17,10 +17,9 @@
   }
   // .train__content
   &__content {
-    @include flex(space-between, center);
-    @include media (max, xl){
-      overflow-x: auto;
-    }
+    @include flex(space-between);
+    overflow-x: auto;
+    
   }
   // .train__box
   &__box {

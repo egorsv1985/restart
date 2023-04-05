@@ -74,6 +74,10 @@
   }
   // .kids__img-box
   &__img-box {
+    img, picture{
+      width: 100%;
+      height: 100%;
+    }
     &--absolute {
       position: absolute;
       left: 23%;
