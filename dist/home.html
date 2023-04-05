@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230405150117">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230405161917">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,25 +29,25 @@
 								<a href="#about" class="nav__link">О КЛУБЕ</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Галерея</a>
+								<a href="#gallery" class="nav__link">Галерея</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">тренируйся без покупки клубной карты</a>
+								<a href="#train" class="nav__link">тренируйся без покупки клубной карты</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Клубные карты</a>
+								<a href="#cards" class="nav__link">Клубные карты</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Выбери своего тренера</a>
+								<a href="#trainer" class="nav__link">Выбери своего тренера</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">KIDS CLUB</a>
+								<a href="#kids" class="nav__link">KIDS CLUB</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">SPA</a>
+								<a href="#spa" class="nav__link">SPA</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">контакты</a>
+								<a href="#contacts" class="nav__link">контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -68,7 +68,7 @@
 						</span>
 					</div>
 					<div class="header__box header__box-buttons">
-						<a href="#mobifitness_main-cont" role="button" class="header__link" target="_blank">расписание групповых программ</a>
+						<a href="schedule.html" role="button" class="header__link" target="_blank">расписание групповых программ</a>
 						<a data-popup="#callback" href="#callback" role="button" class="header__link">Записаться на гостевой визит</a>
 					</div>
 
@@ -76,35 +76,8 @@
 			</div>
 		</header>
 
-		<!-- <div id="mobifitness_main_cont" style="width:100%; max-width:1200px;"></div>
-		
-<script type="text/javascript">
-  (function() {
-    f = function(){
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.async = true;
-      script.setAttribute('id', 'mobifitness_widget_script');
-      script.setAttribute('data-id', '594321');
-      script.setAttribute('data-colored', 1);
-      script.setAttribute('data-lines', 1);
-      script.setAttribute('data-desc', 1);
-      script.setAttribute('data-language', 'ru');
-      script.setAttribute('data-category_filter', 2);
-      script.setAttribute('data-activity_filter', 2);
-      script.setAttribute('data-render_type', 0);
-      script.setAttribute('data-club', '655');
-      script.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//mobifitness.ru/js/widget/widget.js';
-      document.getElementsByTagName('head')[0].appendChild(script);
-    }
-    if (window.opera == '[object Opera]') {
-      document.addEventListener('DOMContentLoaded', f, false);
-    } else { f(); }
-  })();
-</script> -->
 
-
-		<main class="page">
+		<main>
 			<section class="prime">
 				<div class="container prime__wrapper">
 					<div class="prime__box-img">
@@ -262,7 +235,7 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230405150117"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230405161917"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
@@ -273,7 +246,7 @@
 					},
 				});
 			</script>
-			<section class="train">
+			<section class="train" id="train">
 				<div class="train__wrapper">
 					<div class="container">
 						<h2 class="train__title title">тренируйся без покупки клубной карты</h2>
@@ -308,7 +281,7 @@
 				</div>
 			</section>
 
-			<section class="cards">
+			<section class="cards" id="cards">
 				<div class="container">
 					<h2 class="cards__title title">Клубные карты</h2>
 				</div>
@@ -357,7 +330,7 @@
 			</section>
 
 
-			<section class="trainer">
+			<section class="trainer" id="trainer">
 				<div class="container trainer__wrapper">
 					<h2 class="trainer__title title">Выбери своего тренера</h2>
 					<!-- Tab semantics -->
@@ -746,7 +719,7 @@
 							});
 			</script>
 
-			<section class="kids">
+			<section class="kids" id="kids">
 				<div class="container kids__wrapper">
 					<h2 class="kids__title title">KIDS CLUB</h2>
 					<div class="kids__content">
@@ -796,7 +769,7 @@
 				</div>
 			</section>
 
-			<section class="spa">
+			<section class="spa" id="spa">
 				<div class="spa__wrapper">
 					<h2 class="spa__title title">SPA</h2>
 					<div class="spa__content">
@@ -906,7 +879,7 @@
 			</script>
 
 			<img src="img/icons/RESTART2.svg" alt="" class="img" />
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="container contacts__wrapper">
 					<div class="contacts__content">
 						<h2 class="contacts__title title">контакты</h2>
@@ -991,7 +964,36 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230405150117"></script>
+	<script src="js/app.min.js?_v=20230405161917"></script>
+	<!-- <script type="text/javascript">
+	(function () {
+	  var f = function () {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.async = true;
+		script.setAttribute("id", "mobifitness_widget_script");
+		script.setAttribute("data-id", "594321");
+		script.setAttribute("data-colored", 1);
+		script.setAttribute("data-lines", 1);
+		script.setAttribute("data-desc", 1);
+		script.setAttribute("data-language", "ru");
+		script.setAttribute("data-category_filter", 2);
+		script.setAttribute("data-activity_filter", 2);
+		script.setAttribute("data-render_type", 0);
+		script.setAttribute("data-club", "655");
+		script.src =
+		  (document.location.protocol == "https:" ? "https:" : "http:") +
+		  "//mobifitness.ru/js/widget/widget.js";
+		document.getElementsByTagName("head")[0].appendChild(script);
+	  };
+	  if (window.opera == "[object Opera]") {
+		document.addEventListener("DOMContentLoaded", f, false);
+	  } else {
+		f();
+	  }
+	})();
+  </script> -->
+
 
 </body>
 
