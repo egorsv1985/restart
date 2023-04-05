@@ -234,10 +234,6 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
-  overflow: hidden;
-  touch-action: none;
-}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -430,13 +426,12 @@ body {
 
 .burger {
   height: 30px;
+  width: 30px;
   display: block;
   border: none;
   cursor: pointer;
   position: relative;
   z-index: 15;
-  background-color: #fff;
-  border-radius: 50%;
 }
 .burger__inner {
   position: relative;
@@ -1922,6 +1917,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 45px;
+  position: relative;
 }
 .header__span {
   font-family: "ProximaNova-Regular";
@@ -2086,42 +2082,36 @@ body {
   width: 196px;
 }
 
-.open .header {
-  max-width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  background-color: #010101;
-  margin-top: 0;
-  padding-top: 30px;
+.open .header__block {
+  min-width: 135px;
 }
-.open .header__wrapper {
-  flex-direction: column;
-}
-.open .header__logo {
-  margin: 30px 0;
-}
-.open .header__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 65px;
-}
-.open .header__box {
-  display: none;
+.open .header__burger {
+  position: absolute;
+  left: 20%;
+  top: 390%;
 }
 .open .header__nav {
   display: flex;
+  padding: 20px;
+  position: absolute;
+  top: 325%;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  background-color: rgba(1, 1, 1, 0.5);
 }
 .open .nav__list {
   gap: 22px;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  padding: 0 1.5%;
 }
 .open .nav__item {
   font-size: 20px;
+  text-align: center;
 }
 .open .nav__item--map::before {
   background-image: url(../img/icons/location.svg);

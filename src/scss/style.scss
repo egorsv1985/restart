@@ -61,8 +61,8 @@ body {
 
 	// Скролл заблокирован
 	.lock & {
-		overflow: hidden;
-		touch-action: none;
+		// overflow: hidden;
+		// touch-action: none;
 	}
 
 	// Сайт загружен

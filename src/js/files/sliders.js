@@ -45,7 +45,7 @@ function initSliders() {
   // Добавление классов слайдера
   // при необходимости отключить
   bildSliders();
-
+  
 
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {

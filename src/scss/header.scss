@@ -26,6 +26,7 @@
   &__block {
     @include flex(space-between, center);
     gap: 45px;
+    position: relative;
   }
   // .header__span
   &__span {
