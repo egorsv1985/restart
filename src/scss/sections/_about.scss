@@ -1,9 +1,7 @@
 .about {
   position: relative;
-  top: -50px;
-  @include media(min, 1800px) {
-    top: 0;
-  }
+padding-top: 40px;
+ 
   // .about__wrapper
   &__wrapper {
     @include flex(space-between, $flex-direction: column);

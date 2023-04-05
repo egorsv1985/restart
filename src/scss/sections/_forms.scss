@@ -115,12 +115,13 @@
       justify-content: flex-end;
 
       &::before {
+		@include pseudo;
         position: absolute;
         left: 0px;
         top: 2px;
-        font-size: 16px;
-
-        color: $accentColor;
+        @include wh(22px);
+		@include background (url("@img/icons/check.svg"));
+        
         opacity: 0;
         transition: all 0.3s ease 0s;
       }
