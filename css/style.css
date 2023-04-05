@@ -124,10 +124,6 @@
   content: "\e900";
 }
 
-._icon-check:before {
-  content: "\e901";
-}
-
 ._icon-delet:before {
   content: "\e902";
 }
@@ -266,8 +262,8 @@ picture {
 }
 
 .img {
-  margin-left: 20px;
   width: 100%;
+  padding: 0 10px;
 }
 
 .title {
@@ -579,6 +575,8 @@ body {
   position: relative;
   z-index: 1;
   padding: 0 10px;
+  height: 100%;
+  margin-top: 100px;
 }
 .prime__content {
   display: flex;
@@ -746,12 +744,7 @@ body {
 }
 .about {
   position: relative;
-  top: -50px;
-}
-@media only screen and (min-width: 1800px) {
-  .about {
-    top: 0;
-  }
+  padding-top: 40px;
 }
 .about__wrapper {
   display: flex;
@@ -1844,11 +1837,17 @@ body {
   justify-content: flex-end;
 }
 .checkbox__label::before {
+  content: "";
+  display: block;
   position: absolute;
   left: 0px;
   top: 2px;
-  font-size: 16px;
-  color: rgba(49, 48, 48, 0.6);
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/icons/check.svg");
   opacity: 0;
   transition: all 0.3s ease 0s;
 }
