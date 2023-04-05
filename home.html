@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230404161119">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230405131136">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,31 +18,11 @@
 			<div class="container header__wrapper">
 				<div class="header__block">
 					<span class="header__span header__span--thin">МЕНЮ</span>
-					<button type="button" class="header__burger burger">
+					<button type="button" class="header__burger burger button">
 						<div class="burger__inner">
 							<span></span>
 						</div>
 					</button>
-				</div>
-				<a href="home.html" class="header__logo logo">
-					<img src="img/icons/logo.svg" alt="logo" class="logo__img" />
-				</a>
-				<div class="header__inner">
-					<div class="header__box header__box--time">
-						<span class="header__span">Пн-пт: 7:00-24:00</span>
-						<span class="header__span">Сб-Вс: 9:00-22:00</span>
-					</div>
-					<div class="header__box">
-						<span class="header__span header__span--tel"><a href="tel:+79295541859" class="nav__link">+7 (929) 554-18-59</a></span>
-						<span class="header__span header__span--viber"><a href="viber://chat?number=%2B74952923194">+7 (495) 292-31-94</a></span>
-						<span class="header__span header__span--map">
-							<a class="contacts__link" href="https://goo.gl/maps/oMyfjk3UfmUR63Vw8">м. Бауманская</a>
-						</span>
-					</div>
-					<div class="header__box header__box-buttons">
-						<a href="https://mobifitness.ru/" role="button" class="header__link">расписание групповых программ</a>
-						<a data-popup="#callback" href="#callback" role="button" class="header__link">Записаться на гостевой визит</a>
-					</div>
 					<nav class="header__nav nav">
 						<ul class="nav__list">
 							<li class="nav__item">
@@ -72,9 +52,56 @@
 						</ul>
 					</nav>
 				</div>
+				<a href="home.html" class="header__logo logo">
+					<img src="img/icons/logo.svg" alt="logo" class="logo__img" />
+				</a>
+				<div class="header__inner">
+					<div class="header__box header__box--time">
+						<span class="header__span">Пн-пт: 7:00-24:00</span>
+						<span class="header__span">Сб-Вс: 9:00-22:00</span>
+					</div>
+					<div class="header__box">
+						<span class="header__span header__span--tel"><a href="tel:+79295541859" class="nav__link">+7 (929) 554-18-59</a></span>
+						<span class="header__span header__span--viber"><a href="viber://chat?number=%2B74952923194">+7 (495) 292-31-94</a></span>
+						<span class="header__span header__span--map">
+							<a class="contacts__link" href="https://goo.gl/maps/oMyfjk3UfmUR63Vw8">м. Бауманская</a>
+						</span>
+					</div>
+					<div class="header__box header__box-buttons">
+						<a href="#mobifitness_main-cont" role="button" class="header__link" target="_blank">расписание групповых программ</a>
+						<a data-popup="#callback" href="#callback" role="button" class="header__link">Записаться на гостевой визит</a>
+					</div>
+
+				</div>
 			</div>
 		</header>
 
+		<!-- <div id="mobifitness_main_cont" style="width:100%; max-width:1200px;"></div>
+		
+<script type="text/javascript">
+  (function() {
+    f = function(){
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.setAttribute('id', 'mobifitness_widget_script');
+      script.setAttribute('data-id', '594321');
+      script.setAttribute('data-colored', 1);
+      script.setAttribute('data-lines', 1);
+      script.setAttribute('data-desc', 1);
+      script.setAttribute('data-language', 'ru');
+      script.setAttribute('data-category_filter', 2);
+      script.setAttribute('data-activity_filter', 2);
+      script.setAttribute('data-render_type', 0);
+      script.setAttribute('data-club', '655');
+      script.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//mobifitness.ru/js/widget/widget.js';
+      document.getElementsByTagName('head')[0].appendChild(script);
+    }
+    if (window.opera == '[object Opera]') {
+      document.addEventListener('DOMContentLoaded', f, false);
+    } else { f(); }
+  })();
+</script> -->
 
 
 		<main class="page">
@@ -235,7 +262,7 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230404161119"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230405131136"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
@@ -329,6 +356,7 @@
 				<div class="cards__ellipse"></div>
 			</section>
 
+
 			<section class="trainer">
 				<div class="container trainer__wrapper">
 					<h2 class="trainer__title title">Выбери своего тренера</h2>
@@ -366,18 +394,6 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
-											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
-										</div>
-										<div class="swiper__box-content">
-											<p class="swiper__name">Имя Фамилия</p>
-											<p class="swiper__job">Должность</p>
-										</div>
-										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper__item">
-										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -403,6 +419,18 @@
 									<div class="swiper__item">
 										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer3.webp" type="image/webp"><img class="swiper__img" src="img/trainer3.png" alt="trainer" /></picture>
+										</div>
+										<div class="swiper__box-content">
+											<p class="swiper__name">Имя Фамилия</p>
+											<p class="swiper__job">Должность</p>
+										</div>
+										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
 											<p class="swiper__name">Имя Фамилия</p>
@@ -432,18 +460,6 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
-											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
-										</div>
-										<div class="swiper__box-content">
-											<p class="swiper__name">Имя Фамилия</p>
-											<p class="swiper__job">Должность</p>
-										</div>
-										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper__item">
-										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -469,6 +485,18 @@
 									<div class="swiper__item">
 										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer3.webp" type="image/webp"><img class="swiper__img" src="img/trainer3.png" alt="trainer" /></picture>
+										</div>
+										<div class="swiper__box-content">
+											<p class="swiper__name">Имя Фамилия</p>
+											<p class="swiper__job">Должность</p>
+										</div>
+										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
 											<p class="swiper__name">Имя Фамилия</p>
@@ -498,18 +526,6 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
-											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
-										</div>
-										<div class="swiper__box-content">
-											<p class="swiper__name">Имя Фамилия</p>
-											<p class="swiper__job">Должность</p>
-										</div>
-										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper__item">
-										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -535,6 +551,18 @@
 									<div class="swiper__item">
 										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer3.webp" type="image/webp"><img class="swiper__img" src="img/trainer3.png" alt="trainer" /></picture>
+										</div>
+										<div class="swiper__box-content">
+											<p class="swiper__name">Имя Фамилия</p>
+											<p class="swiper__job">Должность</p>
+										</div>
+										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
 											<p class="swiper__name">Имя Фамилия</p>
@@ -564,18 +592,6 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
-											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
-										</div>
-										<div class="swiper__box-content">
-											<p class="swiper__name">Имя Фамилия</p>
-											<p class="swiper__job">Должность</p>
-										</div>
-										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper__item">
-										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -601,6 +617,18 @@
 									<div class="swiper__item">
 										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer3.webp" type="image/webp"><img class="swiper__img" src="img/trainer3.png" alt="trainer" /></picture>
+										</div>
+										<div class="swiper__box-content">
+											<p class="swiper__name">Имя Фамилия</p>
+											<p class="swiper__job">Должность</p>
+										</div>
+										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
 											<p class="swiper__name">Имя Фамилия</p>
@@ -630,18 +658,6 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
-											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
-										</div>
-										<div class="swiper__box-content">
-											<p class="swiper__name">Имя Фамилия</p>
-											<p class="swiper__job">Должность</p>
-										</div>
-										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="swiper__item">
-										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -678,6 +694,18 @@
 								<div class="swiper-slide">
 									<div class="swiper__item">
 										<div class="swiper__box-img">
+											<picture><source srcset="img/trainer1.webp" type="image/webp"><img class="swiper__img" src="img/trainer1.png" alt="trainer" /></picture>
+										</div>
+										<div class="swiper__box-content">
+											<p class="swiper__name">Имя Фамилия</p>
+											<p class="swiper__job">Должность</p>
+										</div>
+										<a data-popup="#callback" href="#callback" role="button" class="swiper__btn btn">записаться к тренеру</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
 											<picture><source srcset="img/trainer2.webp" type="image/webp"><img class="swiper__img" src="img/trainer2.png" alt="trainer" /></picture>
 										</div>
 										<div class="swiper__box-content">
@@ -692,6 +720,31 @@
 					</section>
 				</div>
 			</section>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper(".trainerSwiper", {
+							slidesPerView: 5,
+							centeredSlides: false,
+							spaceBetween: 30,
+							breakpoints: {
+								// when window width is >= 320px
+								900: {
+									slidesPerView: 1,
+									spaceBetween: 10
+								},
+								// when window width is >= 480px
+								900: {
+									slidesPerView: 1,
+									spaceBetween: 20
+								},
+								// when window width is >= 640px
+								1300: {
+									slidesPerView: 2,
+									spaceBetween: 30
+								},
+							});
+			</script>
 
 			<section class="kids">
 				<div class="container kids__wrapper">
@@ -902,7 +955,7 @@
 					<img src="img/icons/logo.svg" alt="logo" class="logo__img">
 				</a>
 				<div class="footer__box">
-					<p class="footer__text text text--right">Разработка сайта:</p>
+					<a href="https://target-kc.ru/" class="footer__text text text--right" target="_blank">Разработка сайта:</a>
 					<p class="footer__text text text--right">Таргет Консалт Компани</p>
 				</div>
 			</div>
@@ -936,7 +989,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230404161119"></script>
+	<script src="js/app.min.js?_v=20230405131136"></script>
 
 </body>
 

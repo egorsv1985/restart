@@ -234,10 +234,6 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
-  overflow: hidden;
-  touch-action: none;
-}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -271,6 +267,7 @@ picture {
 
 .img {
   margin-left: 20px;
+  width: 100%;
 }
 
 .title {
@@ -365,7 +362,6 @@ body.popup-show::after {
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
-  background-color: #fff;
 }
 
 .popup_show .popup__content {
@@ -430,13 +426,12 @@ body {
 
 .burger {
   height: 30px;
+  width: 30px;
   display: block;
   border: none;
   cursor: pointer;
   position: relative;
   z-index: 15;
-  background-color: #fff;
-  border-radius: 50%;
 }
 .burger__inner {
   position: relative;
@@ -492,6 +487,21 @@ body {
     justify-content: flex-start;
     gap: 35px;
   }
+}
+
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .header {
+  transform: none;
+}
+.scroll-up .header__wrapper {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.open .header {
+  transform: translate3d(0, 0, 0);
 }
 
 .prime {
@@ -971,47 +981,6 @@ body {
   text-align: center;
 }
 
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.tabs input[type=radio] {
-  position: absolute;
-  opacity: 0;
-}
-.tabs input[type=radio]:checked + label {
-  font-weight: bold;
-}
-.tabs input[type=radio]:checked + label::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: #000;
-  margin-top: 5px;
-}
-.tabs input[type=radio]:checked ~ .tab-content {
-  display: block;
-}
-.tabs label {
-  display: block;
-  padding: 10px;
-  margin: 0 10px;
-  border: 1px solid #000;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.tabs label:hover {
-  background-color: #f5f5f5;
-}
-.tabs .tab-content {
-  display: none;
-  width: 100%;
-  padding: 20px;
-  margin-top: -1px;
-  border: 1px solid #000;
-}
-
 .trainer {
   position: relative;
   padding: 50px 0 65px;
@@ -1084,19 +1053,10 @@ body {
 .trainer .tabpanel.active {
   display: block;
 }
-.trainer .swiper {
-  overflow: visible;
-}
-.trainer .swiper .swiper-wrapper {
-  justify-content: center;
-}
 .trainer .swiper__box-img {
   max-width: 375px;
   align-self: center;
   margin-bottom: 25px;
-}
-.trainer .swiper__img {
-  transform: rotate(7deg);
 }
 .trainer .swiper__box-content {
   display: flex;
@@ -1134,6 +1094,9 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+.trainer .swiper-wrapper {
+  padding: 35px 0;
+}
 .trainer .swiper-slide {
   max-width: 390px;
   display: flex;
@@ -1142,14 +1105,11 @@ body {
   padding: 20px 30px 16px;
   background-color: #fff;
   max-width: 375px;
-  transform: rotate(-7deg);
+  transform: rotate(7deg);
 }
 .trainer .swiper-slide:nth-child(2n) {
-  transform: rotate(7deg);
   position: relative;
   z-index: 1;
-}
-.trainer .swiper-slide:nth-child(2n) .swiper__img {
   transform: rotate(-7deg);
 }
 .contacts {
@@ -1240,7 +1200,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 18px;
   max-width: 656px;
   height: 78px;
   width: 100%;
@@ -1737,7 +1697,6 @@ body {
   width: 100%;
 }
 .spa .swiper .swiper-wrapper {
-  justify-content: center;
   transform: translate3d(0px, 0px, 0px) !important;
 }
 .spa .swiper .swiper-slide-prev {
@@ -1755,9 +1714,6 @@ body {
   max-width: 390px;
   align-self: center;
   margin-bottom: 25px;
-}
-.spa .swiper__img {
-  transform: rotate(-7deg);
 }
 .spa .swiper__box-content {
   display: flex;
@@ -1942,7 +1898,7 @@ body {
   --logo-left: clamp(60px, 5.71vw + -17.14px, 80px);
 }
 .header__wrapper {
-  background: rgba(255, 255, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   border: 1px solid #fff;
   backdrop-filter: blur(7.5px);
   border-radius: 76px;
@@ -1961,6 +1917,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 45px;
+  position: relative;
 }
 .header__span {
   font-family: "ProximaNova-Regular";
@@ -2125,42 +2082,36 @@ body {
   width: 196px;
 }
 
-.open .header {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  background: linear-gradient(90deg, #C49A6A 0%, #FAD8AB 100%);
-  margin-top: 0;
-  padding-top: 30px;
+.open .header__block {
+  min-width: 135px;
 }
-.open .header__wrapper {
-  flex-direction: column;
-}
-.open .header__logo {
-  margin: 30px 0;
-}
-.open .header__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 65px;
-}
-.open .header__box {
-  display: none;
+.open .header__burger {
+  position: absolute;
+  left: 20%;
+  top: 390%;
 }
 .open .header__nav {
   display: flex;
+  padding: 20px;
+  position: absolute;
+  top: 325%;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  background-color: rgba(1, 1, 1, 0.5);
 }
 .open .nav__list {
   gap: 22px;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  padding: 0 1.5%;
 }
 .open .nav__item {
   font-size: 20px;
+  text-align: center;
 }
 .open .nav__item--map::before {
   background-image: url(../img/icons/location.svg);
