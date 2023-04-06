@@ -227,6 +227,13 @@
       width: 375px !important;
       transform: rotate(7deg);
     }
+    .swiper-slide-active{
+      opacity: 1;
+    }
+    .swiper-slide-next,
+    .swiper-slide-prev{
+      opacity: 0;
+    }
     // .swiper__item
     &__item {
     }
