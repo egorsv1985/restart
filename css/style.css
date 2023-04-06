@@ -1666,6 +1666,13 @@ body {
   width: 375px !important;
   transform: rotate(7deg);
 }
+.spa .swiper .swiper-slide-active {
+  opacity: 1;
+}
+.spa .swiper .swiper-slide-next,
+.spa .swiper .swiper-slide-prev {
+  opacity: 0;
+}
 .spa .swiper__box-img {
   max-width: 390px;
   align-self: center;
