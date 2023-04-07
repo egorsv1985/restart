@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230407105237">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407165215">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -242,7 +242,7 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407105237"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407165215"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
@@ -704,53 +704,64 @@
 
 			<!-- Initialize Swiper -->
 			<script>
-				var swiper = new Swiper(".trainerSwiper", {
-							slidesPerView: 5,
-							loop: true,
-							centeredSlides: false,
-							spaceBetween: 30,
-							breakpoints: {
+				// var swiper = new Swiper(".trainerSwiper", {
+				//   slidesPerView: 2,
+				//   loop: true,
+				//   centeredSlides: false,
+				//   spaceBetween: 50,
+				//   breakpoints: {
 
-								// when window width is >= 480px
-								900: {
-									slidesPerView: 1,
-									spaceBetween: 20
-								},
-								// when window width is >= 640px
-								1300: {
-									slidesPerView: 2,
-									spaceBetween: 30
-								},
-							});
+				//   // when window width is >= 480px
+				//   900: {
+				//     slidesPerView: 1,
+				//     spaceBetween: 20
+				//   },
+				//   // when window width is >= 640px
+				//  1300: {
+				//     slidesPerView: 2,
+				//     spaceBetween: 30
+				//   },
+				// }});
+
+				const swiper = new Swiper('.trainerSwiper', {
+					loop: true,
+					speed: 2000,
+					slidesPerView: 3,
+					autoplay: {
+						delay: 0,
+					},
+				})
 			</script>
 
 			<section class="kids" id="kids">
 				<div class="container kids__wrapper">
 					<h2 class="kids__title title">KIDS CLUB</h2>
 					<div class="kids__content">
-						<div class="kids__box">
-							<div class="kids__box-img">
-								<picture><source srcset="img/kids1.webp" type="image/webp"><img src="img/kids1.png" alt="Танцевальная гимнастика" class="kids__img" width="213px" height="213px" /></picture>
+						<div class="kids__box-wrap">
+							<div class="kids__box">
+								<div class="kids__box-img">
+									<picture><source srcset="img/kids1.webp" type="image/webp"><img src="img/kids1.png" alt="Танцевальная гимнастика" class="kids__img" width="213px" height="213px" /></picture>
+								</div>
+								<p class="kids__text text">Танцевальная<br />гимнастика</p>
 							</div>
-							<p class="kids__text text">Танцевальная<br />гимнастика</p>
-						</div>
-						<div class="kids__box">
-							<div class="kids__box-img">
-								<picture><source srcset="img/kids4.webp" type="image/webp"><img src="img/kids4.png" alt="Детский фитнес" class="kids__img" width="213px" height="213px" /></picture>
+							<div class="kids__box">
+								<div class="kids__box-img">
+									<picture><source srcset="img/kids4.webp" type="image/webp"><img src="img/kids4.png" alt="Детский фитнес" class="kids__img" width="213px" height="213px" /></picture>
+								</div>
+								<p class="kids__text text">Детский<br />фитнес</p>
 							</div>
-							<p class="kids__text text">Детский<br />фитнес</p>
-						</div>
-						<div class="kids__box">
-							<div class="kids__box-img">
-								<picture><source srcset="img/kids5.webp" type="image/webp"><img src="img/kids5.png" alt="дельфиненок" class="kids__img" width="213px" height="213px" /></picture>
+							<div class="kids__box">
+								<div class="kids__box-img">
+									<picture><source srcset="img/kids5.webp" type="image/webp"><img src="img/kids5.png" alt="дельфиненок" class="kids__img" width="213px" height="213px" /></picture>
+								</div>
+								<p class="kids__text text">дельфиненок</p>
 							</div>
-							<p class="kids__text text">дельфиненок</p>
-						</div>
-						<div class="kids__box">
-							<div class="kids__box-img">
-								<picture><source srcset="img/kids6.webp" type="image/webp"><img src="img/kids6.png" alt="Детский Бокс" class="kids__img" width="213px" height="213px" /></picture>
+							<div class="kids__box">
+								<div class="kids__box-img">
+									<picture><source srcset="img/kids6.webp" type="image/webp"><img src="img/kids6.png" alt="Детский Бокс" class="kids__img" width="213px" height="213px" /></picture>
+								</div>
+								<p class="kids__text text">Детский<br />Бокс</p>
 							</div>
-							<p class="kids__text text">Детский<br />Бокс</p>
 						</div>
 
 						<div class="kids__img-box">
@@ -875,7 +886,7 @@
 			<script>
 				var swiper = new Swiper(".spaSwiper", {
 					slidesPerView: 1,
-					spaceBetween: 30,
+					spaceBetween: 55,
 					navigation: {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
@@ -969,7 +980,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230407105237"></script>
+	<script src="js/app.min.js?_v=20230407165215"></script>
+
 	<!-- <script type="text/javascript">
 	(function () {
 	  var f = function () {
@@ -998,7 +1010,6 @@
 	  }
 	})();
   </script> -->
-
 
 </body>
 
