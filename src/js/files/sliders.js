@@ -45,12 +45,12 @@ function initSliders() {
   // Добавление классов слайдера
   // при необходимости отключить
   bildSliders();
-  
 
   if (document.querySelector(".spaSwiper")) {
     new Swiper(".spaSwiper", {
-     spaceBetween: 40,
-     slidesPerView: 1,
+      spaceBetween: 55,
+      loop: true,
+      slidesPerView: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
