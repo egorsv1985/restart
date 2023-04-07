@@ -1605,7 +1605,7 @@ body {
   left: -16%;
   max-width: 287px;
 }
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1450px) {
   .spa__item:nth-child(3) {
     left: 3%;
   }
@@ -1636,7 +1636,7 @@ body {
   margin-left: 30px;
   max-width: 960px;
 }
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1450px) {
   .spa__text--big {
     margin: 0 auto;
   }
@@ -1715,7 +1715,7 @@ body {
   max-width: 500px;
   transform: rotate(7deg);
 }
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1450px) {
   .spa .swiper {
     position: relative;
     margin: 0 auto;

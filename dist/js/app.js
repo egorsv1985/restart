@@ -24,15 +24,9 @@
       if (t) {
         let i = document.querySelectorAll("[data-lp]");
         for (let e = 0; e < i.length; e++) {
-          i[e].style.paddingRight =
-            window.innerWidth -
-            document.querySelector(".wrapper").offsetWidth +
-            "px";
+          i[e].style.paddingRight = "0px";
         }
-        (s.style.paddingRight =
-          window.innerWidth -
-          document.querySelector(".wrapper").offsetWidth +
-          "px"),
+        (s.style.paddingRight = "0px"),
           document.documentElement.classList.add("lock"),
           (t = !1),
           setTimeout(function () {
@@ -1961,7 +1955,7 @@
         t.freeMode.onTouchStart(),
       t.emit("touchStart", l);
   }
-  function q(e) {
+  function V(e) {
     const t = p(),
       s = this,
       i = s.touchEventsData,
@@ -2178,7 +2172,7 @@
       s.updateProgress(i.currentTranslate),
       s.setTranslate(i.currentTranslate));
   }
-  function V(e) {
+  function q(e) {
     const t = this,
       s = t.touchEventsData,
       i = s.evCache.findIndex((t) => t.pointerId === e.pointerId);
@@ -2413,8 +2407,8 @@
           t = p(),
           { params: s } = e;
         (e.onTouchStart = W.bind(e)),
-          (e.onTouchMove = q.bind(e)),
-          (e.onTouchEnd = V.bind(e)),
+          (e.onTouchMove = V.bind(e)),
+          (e.onTouchEnd = q.bind(e)),
           s.cssMode && (e.onScroll = R.bind(e)),
           (e.onClick = N.bind(e)),
           (e.onLoad = Y.bind(e)),

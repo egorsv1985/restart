@@ -93,7 +93,7 @@
       top: 26%;
       left: -16%;
       max-width: 287px;
-      @include media(max, 1550px) {
+      @include media(max, 1450px) {
         left: 3%;
       }
     }
@@ -126,7 +126,7 @@
       margin-top: 75px;
       margin-left: 30px;
       max-width: 960px;
-      @include media(max, 1550px) {
+      @include media(max, 1450px) {
         margin: 0 auto;
       }
     }
@@ -214,7 +214,7 @@
     padding: 35px;
     max-width: 500px;
     transform: rotate(7deg);
-    @include media(max, 1550px) {
+    @include media(max, 1450px) {
       position: relative;
       margin: 0 auto;
     }

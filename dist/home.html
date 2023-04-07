@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230407161841">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407165215">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -242,7 +242,7 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407161841"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407165215"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
@@ -704,24 +704,33 @@
 
 			<!-- Initialize Swiper -->
 			<script>
-				var swiper = new Swiper(".trainerSwiper", {
-							slidesPerView: 5,
-							loop: true,
-							centeredSlides: false,
-							spaceBetween: 30,
-							breakpoints: {
+				// var swiper = new Swiper(".trainerSwiper", {
+				//   slidesPerView: 2,
+				//   loop: true,
+				//   centeredSlides: false,
+				//   spaceBetween: 50,
+				//   breakpoints: {
 
-								// when window width is >= 480px
-								900: {
-									slidesPerView: 1,
-									spaceBetween: 20
-								},
-								// when window width is >= 640px
-								1300: {
-									slidesPerView: 2,
-									spaceBetween: 30
-								},
-							});
+				//   // when window width is >= 480px
+				//   900: {
+				//     slidesPerView: 1,
+				//     spaceBetween: 20
+				//   },
+				//   // when window width is >= 640px
+				//  1300: {
+				//     slidesPerView: 2,
+				//     spaceBetween: 30
+				//   },
+				// }});
+
+				const swiper = new Swiper('.trainerSwiper', {
+					loop: true,
+					speed: 2000,
+					slidesPerView: 3,
+					autoplay: {
+						delay: 0,
+					},
+				})
 			</script>
 
 			<section class="kids" id="kids">
@@ -971,7 +980,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230407161841"></script>
+	<script src="js/app.min.js?_v=20230407165215"></script>
+
 	<!-- <script type="text/javascript">
 	(function () {
 	  var f = function () {
@@ -1000,7 +1010,6 @@
 	  }
 	})();
   </script> -->
-
 
 </body>
 
