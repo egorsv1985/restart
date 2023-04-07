@@ -1,37 +1,50 @@
 .prime {
   position: relative;
+  padding-top: 120px;
+  background-image: url(@img/prime2.png);
+  background-repeat: no-repeat;
+  @include media (max, lg) {
+    background-position: -60px -55px;
+  }
+  
+  margin: 0 auto;
+    max-width: 1800px;
+
   // .prime__wrapper
   &__wrapper {
-    @include flex(space-between, flex-end);
+    @include flex(space-between, center);
     position: relative;
     gap: 20px;
-    @include media(max, xl) {
-      justify-content: center;
-    }
+   
   }
   // .prime__title
   &__title {
+    @include media (max, lg) {
+      font-size: 30px;
+    }
+    @include media (max, sm) {
+      font-size: 25px;
+    }
     &::after {
       display: none;
     }
   }
   // .prime__box-img
   &__box-img {
-    width: 100%;
-    height: 650px;
-    position: relative;
-    @include media(max, xl) {
-      position: absolute;
-      height: 100%;
+    width: 610px;
+    height: 844px;
+   
+    @include media(max, lg) {
+      max-width: 100px;
     }
 
     &::before {
-      @include pseudo;
+      // @include pseudo;
       position: absolute;
       top: 27%;
       left: 0;
       @include wh(454px);
-
+      z-index: -1;
       background-color: #fff;
       filter: blur(150px);
 
@@ -67,18 +80,21 @@
     z-index: 1;
     padding: 0 10px;
     height: 100%;
-    margin-top: 100px;
+    margin-top: -215px;
+    @include media (max, lg) {
+      margin-top: -140px;
+    }
   }
   // .prime__content
   &__content {
     @include flex(space-between, center, $flex-direction: column);
     gap: 30px;
-    margin-bottom: -55px;
+   
     @include media(max, xl) {
-      margin-top: 150px;
+      // margin-top: 150px;
     }
     @include media(max, lg) {
-      margin-top: 130px;
+      align-items:flex-start;
     }
   }
   // .prime__subtitle
@@ -87,7 +103,7 @@
   // .prime__form
   &__form {
   }
- 
+
   // .prime__ellipse
   &__ellipse {
     position: absolute;

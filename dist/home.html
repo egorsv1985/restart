@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230406185458">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407102145">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,13 @@
 			<section class="prime">
 				<div class="container prime__wrapper">
 					<div class="prime__box-img">
-						<picture><source srcset="img/prime.webp" type="image/webp"><img src="img/prime.png" alt="RESTART" class="prime__img" width="610px" height="844px" /></picture>
+						<!-- <img
+        src="img/prime.png"
+        alt="RESTART"
+        class="prime__img"
+        width="610px"
+        height="844px"
+      /> -->
 					</div>
 					<div class="prime__content">
 						<h2 class="prime__title title">Безлимит <br> со скидкой 20%</h2>
@@ -235,11 +241,12 @@
 			</section>
 
 
-			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230406185458"></script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407102145"></script>
 
 			<!-- Initialize Swiper -->
 			<script>
 				var swiper = new Swiper(".gallerySwiper", {
+					loop: true,
 					navigation: {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
@@ -702,11 +709,7 @@
 							centeredSlides: false,
 							spaceBetween: 30,
 							breakpoints: {
-								// when window width is >= 320px
-								900: {
-									slidesPerView: 1,
-									spaceBetween: 10
-								},
+
 								// when window width is >= 480px
 								900: {
 									slidesPerView: 1,
@@ -965,7 +968,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230406185458"></script>
+	<script src="js/app.min.js?_v=20230407102145"></script>
 	<!-- <script type="text/javascript">
 	(function () {
 	  var f = function () {
