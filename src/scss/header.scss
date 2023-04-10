@@ -13,6 +13,7 @@
 
     border-radius: 76px;
     padding: 15px 30px;
+    position: relative;
 
     @include flex($align-items: center);
     @include media(max, xl) {
@@ -149,5 +150,35 @@
     &__wrapper {
       background-color: rgba(1, 1, 1, 0.5);
     }
+  }
+}
+.header {
+  // .header__social-list
+  &__social-list {
+    @include flex(space-between, center);
+    position: absolute;
+    right: 18px;
+    bottom: -60px;
+    width: 155px;
+    @include media (max, sm){
+      display: none;
+    }
+  }
+  // .header__social-item
+  &__social-item {
+    transition: all .2s ease-in-out;
+    &:hover{
+      background-color: #E8BA18;
+      
+       
+      
+      
+    }
+  }
+  // .header__social-link
+  &__social-link {
+  }
+  // .header__img
+  &__img {
   }
 }

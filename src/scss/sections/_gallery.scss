@@ -112,7 +112,7 @@
     border: 2px solid #fbd8aa;
 
     @include wh(var(--gallery-buttons-height));
-
+cursor: pointer;
     position: absolute;
     top: 5px;
 

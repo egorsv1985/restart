@@ -308,6 +308,7 @@
   .swiper-button-prev {
     background-color: rgba(1, 1, 1, 0.5);
     border: 2px solid #fbd8aa;
+    cursor: pointer;
 
     @include wh(80px);
 

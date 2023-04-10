@@ -1,8 +1,19 @@
 .prime {
   position: relative;
   padding-top: 120px;
-  background-image: url(@img/prime2.png);
+  background-image: url("@img/prime.png");
+  background-position: 70px 23px;
   background-repeat: no-repeat;
+  &::before{
+    @include pseudo;
+    @include background (url("@img/icons/prime-ellipse.svg"));
+    @include wh (1054px);
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
   @include media (max, lg) {
     background-position: -60px -55px;
   }
