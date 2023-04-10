@@ -7,7 +7,7 @@
 
   // .header__wrapper
   &__wrapper {
-    background-color: rgba(255, 255, 255, 0.01);
+    background-color: rgba(1, 1, 1, 0.5);
     border: 1px solid #fff;
     backdrop-filter: blur(7.5px);
 
@@ -136,6 +136,11 @@
     padding: 5px;
 
     color: $textAccentColor;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #3a3a3a;
+      color: $textMainColor;
+    }
   }
 }
 .wrapper-schedule {

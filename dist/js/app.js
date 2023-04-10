@@ -575,7 +575,7 @@
       : e.offsetWidth;
   }
   let C, L, M;
-  function P() {
+  function O() {
     return (
       C ||
         (C = (function () {
@@ -593,11 +593,11 @@
       C
     );
   }
-  function O(e = {}) {
+  function P(e = {}) {
     return (
       L ||
         (L = (function ({ userAgent: e } = {}) {
-          const t = P(),
+          const t = O(),
             s = h(),
             i = s.navigator.platform,
             r = e || s.navigator.userAgent,
@@ -846,9 +846,9 @@
           i.cssMode &&
           (S(r, "--swiper-centered-offset-before", ""),
           S(r, "--swiper-centered-offset-after", ""));
-      const P = i.grid && i.grid.rows > 1 && e.grid;
-      let O;
-      P && e.grid.initSlides(u);
+      const O = i.grid && i.grid.rows > 1 && e.grid;
+      let P;
+      O && e.grid.initSlides(u);
       const A =
         "auto" === i.slidesPerView &&
         i.breakpoints &&
@@ -858,9 +858,9 @@
       for (let r = 0; r < u; r += 1) {
         let n;
         if (
-          ((O = 0),
+          ((P = 0),
           p[r] && (n = p[r]),
-          P && e.grid.updateSlide(r, n, u, t),
+          O && e.grid.updateSlide(r, n, u, t),
           !p[r] || "none" !== y(n, "display"))
         ) {
           if ("auto" === i.slidesPerView) {
@@ -873,7 +873,7 @@
               l && (n.style.webkitTransform = "none"),
               i.roundLengths)
             )
-              O = e.isHorizontal() ? x(n, "width", !0) : x(n, "height", !0);
+              P = e.isHorizontal() ? x(n, "width", !0) : x(n, "height", !0);
             else {
               const e = s(a, "width"),
                 t = s(a, "padding-left"),
@@ -881,23 +881,23 @@
                 r = s(a, "margin-left"),
                 o = s(a, "margin-right"),
                 l = a.getPropertyValue("box-sizing");
-              if (l && "border-box" === l) O = e + r + o;
+              if (l && "border-box" === l) P = e + r + o;
               else {
                 const { clientWidth: s, offsetWidth: a } = n;
-                O = e + t + i + r + o + (a - s);
+                P = e + t + i + r + o + (a - s);
               }
             }
             o && (n.style.transform = o),
               l && (n.style.webkitTransform = l),
-              i.roundLengths && (O = Math.floor(O));
+              i.roundLengths && (P = Math.floor(P));
           } else
-            (O = (a - (i.slidesPerView - 1) * E) / i.slidesPerView),
-              i.roundLengths && (O = Math.floor(O)),
-              p[r] && (p[r].style[t("width")] = `${O}px`);
-          p[r] && (p[r].swiperSlideSize = O),
-            m.push(O),
+            (P = (a - (i.slidesPerView - 1) * E) / i.slidesPerView),
+              i.roundLengths && (P = Math.floor(P)),
+              p[r] && (p[r].style[t("width")] = `${P}px`);
+          p[r] && (p[r].swiperSlideSize = P),
+            m.push(P),
             i.centeredSlides
-              ? ((C = C + O / 2 + L / 2 + E),
+              ? ((C = C + P / 2 + L / 2 + E),
                 0 === L && 0 !== r && (C = C - a / 2 - E),
                 0 === r && (C = C - a / 2 - E),
                 Math.abs(C) < 0.001 && (C = 0),
@@ -909,9 +909,9 @@
                   e.params.slidesPerGroup ==
                   0 && h.push(C),
                 f.push(C),
-                (C = C + O + E)),
-            (e.virtualSize += O + E),
-            (L = O),
+                (C = C + P + E)),
+            (e.virtualSize += P + E),
+            (L = P),
             (M += 1);
         }
       }
@@ -923,7 +923,7 @@
           (r.style.width = `${e.virtualSize + i.spaceBetween}px`),
         i.setWrapperSize &&
           (r.style[t("width")] = `${e.virtualSize + i.spaceBetween}px`),
-        P && e.grid.updateWrapperSize(O, h, t),
+        O && e.grid.updateWrapperSize(P, h, t),
         !i.centeredSlides)
       ) {
         const t = [];
@@ -2693,8 +2693,8 @@
       }
       const r = this;
       (r.__swiper__ = !0),
-        (r.support = P()),
-        (r.device = O({ userAgent: s.userAgent })),
+        (r.support = O()),
+        (r.device = P({ userAgent: s.userAgent })),
         (r.browser = A()),
         (r.eventsListeners = {}),
         (r.eventsAnyListeners = []),
@@ -3188,8 +3188,7 @@
           });
       },
     ]);
-  const oe = ae;
-  function le() {
+  function oe() {
     let e = document.querySelectorAll(
       '[class*="__swiper"]:not(.swiper-wrapper)'
     );
@@ -3201,17 +3200,7 @@
       });
   }
   window.addEventListener("load", function (e) {
-    le(),
-      document.querySelector(".spaSwiper") &&
-        new oe(".spaSwiper", {
-          spaceBetween: 55,
-          loop: !0,
-          slidesPerView: 1,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
+    oe();
   });
   e.watcher = new (class {
     constructor(e) {
@@ -3323,9 +3312,9 @@
         );
     }
   })({});
-  let de = !1;
+  let le = !1;
   setTimeout(() => {
-    if (de) {
+    if (le) {
       let e = new Event("windowScroll");
       window.addEventListener("scroll", function (t) {
         document.dispatchEvent(e);
@@ -3375,7 +3364,7 @@
         document.addEventListener("watcherCallback", e);
     })(),
     (function () {
-      de = !0;
+      le = !0;
       const e = document.querySelector("header.header"),
         t = e.hasAttribute("data-scroll-show"),
         s = e.dataset.scrollShow ? e.dataset.scrollShow : 500,
@@ -3406,23 +3395,23 @@
           (n = o <= 0 ? 0 : o);
       });
     })();
-  const ce = document.body,
-    pe = "scroll-up",
-    ue = "scroll-down";
-  let he = 0;
+  const de = document.body,
+    ce = "scroll-up",
+    pe = "scroll-down";
+  let ue = 0;
   window.addEventListener("scroll", () => {
     const e = window.pageYOffset;
     e <= 0
-      ? ce.classList.remove(pe)
-      : (e > he && !ce.classList.contains(ue)
-          ? (ce.classList.remove(pe), ce.classList.add(ue))
-          : e < he &&
-            ce.classList.contains(ue) &&
-            (ce.classList.remove(ue), ce.classList.add(pe)),
-        (he = e));
+      ? de.classList.remove(ce)
+      : (e > ue && !de.classList.contains(pe)
+          ? (de.classList.remove(ce), de.classList.add(pe))
+          : e < ue &&
+            de.classList.contains(pe) &&
+            (de.classList.remove(pe), de.classList.add(ce)),
+        (ue = e));
   });
-  const fe = document.querySelectorAll(".tabpanel");
-  fe.forEach((e) => {
+  const he = document.querySelectorAll(".tabpanel");
+  he.forEach((e) => {
     new Swiper(e.querySelector(".swiper"), {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -3434,36 +3423,36 @@
       pagination: { el: e.querySelector(".swiper-pagination"), clickable: !0 },
     });
   });
-  const me = document.querySelectorAll(".tab");
-  me.forEach((e) => {
+  const fe = document.querySelectorAll(".tab");
+  fe.forEach((e) => {
     e.addEventListener("click", (t) => {
       t.preventDefault(),
-        me.forEach((e) => e.classList.remove("active")),
+        fe.forEach((e) => e.classList.remove("active")),
         e.classList.add("active");
       const s = e.getAttribute("href");
-      fe.forEach((e) => {
+      he.forEach((e) => {
         e.classList.remove("active"),
           "#" + e.getAttribute("id") === s && e.classList.add("active");
       });
     });
   });
-  const ge = document.querySelector("#tablist").querySelectorAll("li"),
-    ve = document.querySelectorAll(".tabpanel");
+  const me = document.querySelector("#tablist").querySelectorAll("li"),
+    ge = document.querySelectorAll(".tabpanel");
   document.querySelectorAll(".trainerSwiper");
-  for (const e of ge) {
+  for (const e of me) {
     const t = e.querySelector("a");
     t.addEventListener("click", (e) => {
-      e.preventDefault(), we(t);
+      e.preventDefault(), ve(t);
     });
   }
-  function we(e) {
+  function ve(e) {
     const t = document.querySelector(e.getAttribute("href"));
-    for (const e of ve)
+    for (const e of ge)
       e === t
-        ? (e.classList.add("active"), Se(t))
+        ? (e.classList.add("active"), we(t))
         : e.classList.remove("active");
   }
-  function Se(e) {
+  function we(e) {
     const t = e.querySelector(".swiper");
     t.classList.contains("swiper-container-initialized") ||
       (new Swiper(t, {
@@ -3474,5 +3463,5 @@
       }),
       t.classList.add("swiper-container-initialized"));
   }
-  we(ge[0].querySelector("a"));
+  ve(me[0].querySelector("a"));
 })();

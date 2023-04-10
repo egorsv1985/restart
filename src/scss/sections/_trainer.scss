@@ -32,6 +32,11 @@
     text-align: center;
 
     color: $textMainColor;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: $textAccentColor;
+    }
   }
 
   .tab:focus-visible {
@@ -141,6 +146,10 @@
       text-transform: uppercase;
 
       color: $textMainColor;
+      transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #3a3a3a;
+    }
     }
   }
   .trainerSwiper {
@@ -156,11 +165,19 @@
     background-color: #fff;
     width: 375px !important;
     transform: rotate(7deg);
+    transition: all .2s ease-in-out;
+    &:hover{
+      transform: rotate(0deg);
+    }
 
     &:nth-child(2n) {
       position: relative;
       z-index: 1;
       transform: rotate(-7deg);
+      transition: all .2s ease-in-in;
+      &:hover{
+        transform: rotate(0deg);
+      }
       .swiper__img {
       }
     }

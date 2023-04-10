@@ -9,7 +9,6 @@
     z-index: 1;
     @include flex(space-between, $flex-direction: column);
     gap: var(--gallery-wrapper-gap);
-    
   }
   // .gallery__content
   &__content {
@@ -26,7 +25,6 @@
       @include media(max, xl) {
         left: -23%;
       }
-     
     }
   }
   // .gallery__text
@@ -48,8 +46,12 @@
     line-height: var(--gallery-btn-font-size);
 
     color: $textMainColor;
-    @include media (max, lg) {
-     height: 50px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #3a3a3a;
+    }
+    @include media(max, lg) {
+      height: 50px;
     }
   }
   // .gallery__buttons
@@ -63,13 +65,12 @@
     width: 174px;
     height: var(--gallery-buttons-height);
     --gallery-buttons-height: clamp(30px, 4.81vw + 12.69px, 80px);
-    @include media (max, xl) {
+    @include media(max, xl) {
       bottom: 65px;
     }
-    @include media (max, md) {
+    @include media(max, md) {
       bottom: 15px;
     }
-    
   }
   .swiper {
     position: absolute;
@@ -116,12 +117,14 @@
     top: 5px;
 
     border-radius: 50%;
+    &:hover{
+      background-color:#3a3a3a;
+    }
 
     &::after {
       @include pseudo;
-      --gallery-arrow: clamp(15px, 2.59vw + 5.67px, 29px);
 
-      @include wh(var(--gallery-arrow));
+      @include wh(22px, 27px);
       @include background(url(../img/icons/arrow.svg));
       @include pos(absolute, $top: 50%, $left: 56%);
       transform: translate(-50%, -50%);
@@ -142,8 +145,6 @@
   }
 
   .swiper-button-disabled {
-    background-color: #fff;
-
     &::after {
       @include background(url(../img/icons/arrow.svg));
     }
